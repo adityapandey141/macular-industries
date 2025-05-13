@@ -34,7 +34,7 @@ const About = () => {
           <div className="absolute bottom-4 right-4 bg-white p-3 sm:p-4 flex flex-col items-start w-28 sm:w-32 md:w-40 shadow rounded">
             <div className="flex items-center">
               <div className="h-6 w-1.5 sm:h-8 sm:w-2 bg-red-600 mr-2"></div>
-              <span className="text-2xl sm:text-3xl md:text-4xl font-bold">35+</span>
+              <span className="text-2xl sm:text-3xl md:text-4xl font-bold">3500+</span>
             </div>
             <span className="text-gray-600 text-xs sm:text-sm mt-1">Years of experience</span>
           </div>
