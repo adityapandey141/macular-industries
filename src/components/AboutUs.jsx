@@ -1,5 +1,6 @@
 "use client";
 import Image from 'next/image';
+import Link from 'next/link';
 import { FaBolt, FaTools } from 'react-icons/fa';
 import { BiShield } from 'react-icons/bi';
 import About1 from "../assets/About1.jpg";
@@ -45,9 +46,11 @@ const AboutUs = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-              <button className="bg-[#ED2236] hover:bg-[#16171A] text-white  py-2.5 px-6 text-sm  font-medium transition">
-                Know More
+              <Link href="/about-us">
+              <button className="bg-[#ED2236] hover:bg-[#16171A] text-white  font-bold py-2 sm:py-3 px-5 sm:px-7 rounded-md flex items-center mx-auto md:mx-0 transition duration-300">
+                Know more
               </button>
+            </Link>
               {/* <div className="w-30 h-20 relative">
                 <Image
                   src={shape1}

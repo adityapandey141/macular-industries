@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import Asign1 from "../assets/Asign1.png";
 import Athumb1 from "../assets/Athumb1.jpg";
 import Athumb2 from "../assets/Athumb2.jpg";
@@ -34,7 +35,7 @@ const About = () => {
           <div className="absolute bottom-4 right-4 bg-white p-3 sm:p-4 flex flex-col items-start w-28 sm:w-32 md:w-40 shadow rounded">
             <div className="flex items-center">
               <div className="h-6 w-1.5 sm:h-8 sm:w-2 bg-red-600 mr-2"></div>
-              <span className="text-2xl sm:text-3xl md:text-4xl font-bold">3500+</span>
+              <span className="text-2xl sm:text-3xl md:text-4xl font-bold">35+</span>
             </div>
             <span className="text-gray-600 text-xs sm:text-sm mt-1">Years of experience</span>
           </div>
@@ -74,10 +75,9 @@ const About = () => {
                   <path d="M8.93 16.93a5.5 5.5 0 1 0 6.14-9"/>
                 </svg>
               </div>
-              <div className="text-sm sm:text-base">
-                <span className="font-bold block">Expert</span>
-                <span className="font-bold block">electrician</span>
-              </div>
+              <h1 className="font-semibold text-black text-xl">
+                Expert lectrician
+              </h1>
             </div>
 
             {/* <div className="w-2 h-2 bg-red-500 rotate-45 hidden sm:block"></div> */}
@@ -90,10 +90,9 @@ const About = () => {
                   <path d="M12 8h.01"/>
                 </svg>
               </div>
-              <div className="text-sm sm:text-base">
-                <span className="font-bold block">Safety</span>
-                <span className="font-bold block">assurance</span>
-              </div>
+              <h1 className="font-semibold text-black text-xl">
+                Safety assurance
+              </h1>
             </div>
           </div>
 
@@ -116,9 +115,11 @@ const About = () => {
 
          
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-start gap-4">
-            <button className="bg-[#ED2236] hover:bg-[#16171A] text-white  py-2.5 px-6 text-sm  font-medium transition">
-                Know More
+            <Link href="/contact-us">
+              <button className="bg-[#ED2236] hover:bg-[#16171A] text-white  font-bold py-2 sm:py-3 px-5 sm:px-7 rounded-md flex items-center mx-auto md:mx-0 transition duration-300">
+                Know more
               </button>
+            </Link>
             {/* <div className="w-32 sm:w-40">
               <Image 
                 src={Asign1}
