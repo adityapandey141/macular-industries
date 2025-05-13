@@ -48,7 +48,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto p-4 sm:p-6 bg-white rounded-lg shadow-md mt-10 mb-10 mb-[-35px]" id="contactform">
+    <div className="max-w-7xl mx-auto p-4 sm:p-6 bg-white rounded-lg shadow-md mt-10 mb-10 " id="contactform">
       <h2 className="text-4xl  font-bold text-black mb-6 text-center sm:text-left">
         Share your requirements here
       </h2>

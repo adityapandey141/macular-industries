@@ -103,14 +103,14 @@ const Products = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
       <div className="flex flex-col md:flex-row gap-10">
 
-        {/* Left Side: Tabs */}
+     
         <div className="w-full md:w-1/3">
           <h3 className="text-xl sm:text-3xl font-bold text-black mt-2 mb-3">Our Product Line</h3>
           <ul className="space-y-2 sm:space-y-3">
             {serviceMenuItems.map((item, index) => (
               <li key={index} className="border-b pb-2">
                 <button
-                  className="flex justify-between items-center hover:text-blue-600 text-sm sm:text-base w-full text-left"
+                  className="flex justify-between items-center hover:text-blue-600 text-2xl font-bold text-black w-full text-left"
                   onClick={() => setActiveSection(item.title)}
                 >
                   {item.title}
@@ -123,7 +123,7 @@ const Products = () => {
           </ul>
         </div>
 
-        {/* Right Side: Content */}
+     
         <div className="w-full md:w-2/3">
           {!activeSection && (
             <div className="mb-8">
@@ -143,15 +143,15 @@ const Products = () => {
                 .filter(section => section.heading === activeSection)
                 .map((section, index) => (
                   <div key={index} className="p-5 rounded-lg">
-                    <h2 className="text-md sm:text-2xl font-semibold text-black mb-2">{section.heading}</h2>
+                    <h2 className="text-xl sm:text-3xl font-bold text-black mb-2">{section.heading}</h2>
                     <p className="text-gray-900 text-xl mb-2">{section.text}</p>
                     <ul className="text-gray-900 text-lg space-y-2">
                       {section.items.map((item, i) => (
                         <li key={i} className="flex items-start gap-2">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
+                            width="20"
+                            height="20"
                             fill="green"
                             viewBox="0 0 16 16"
                             className="mt-1"
