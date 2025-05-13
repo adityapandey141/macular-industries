@@ -1,0 +1,100 @@
+"use client";
+import React, { useState } from 'react';
+
+const CTA2 = () => {
+  const [email, setEmail] = useState('');
+  const [status, setStatus] = useState({ submitting: false });
+  const [success, setSuccess] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setStatus({ submitting: true });
+    setSuccess(false);
+
+    console.log('Email submitted:', email);
+
+    // Simulate delay (e.g., API call)
+    setTimeout(() => {
+      setStatus({ submitting: false });
+      setSuccess(true);
+      setEmail('');
+    }, 1500);
+  };
+
+  return (
+    <div className="w-full bg-white text-white mb-[-100px]">
+      <div className="max-w-7xl mx-auto px-4 py-8">
+        <div className="relative bg-red-600 rounded-md overflow-hidden p-8">
+          <div className="absolute top-0 right-0 left-0 bottom-0 opacity-10">
+            <div className="transform rotate-10 -translate-y-1/4 translate-x-1/4">
+              <div className="h-full w-full border-t-4 border-white"></div>
+            </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row md:items-center justify-between relative z-10">
+            <div className="md:w-1/2 mb-6 md:mb-0">
+              <h2 className="text-3xl font-bold">
+                Ready to Partner with a Trusted Manufacturer?
+              </h2>
+              {success && (
+                 <p className="mt-2 text-white text-2xl font-semibold">
+                  ✅ Email submitted successfully!
+                </p>
+              )}
+            </div>
+
+            <div className="md:w-1/2">
+              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Email address"
+                  required
+                  className="px-4 py-3 w-full sm:flex-grow border border-black bg-white text-black rounded-md sm:rounded-r-none mb-2 sm:mb-0"
+                />
+                <button
+                  type="submit"
+                  disabled={status.submitting}
+                  className={`w-full sm:w-auto py-3 px-6 rounded border border-black bg-white text-black hover:text-white hover:bg-[#16171A] transition font-semibold flex items-center justify-center gap-2 ${
+                    status.submitting ? 'opacity-50 cursor-not-allowed' : ''
+                  }`}
+                >
+                  {status.submitting ? (
+                    <>
+                      <svg
+                        className="animate-spin h-5 w-5 text-black"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        ></circle>
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                        ></path>
+                      </svg>
+                      Sending...
+                    </>
+                  ) : (
+                    <>Request a Quote</>
+                  )}
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default CTA2;
