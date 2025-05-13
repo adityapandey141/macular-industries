@@ -88,7 +88,6 @@ const Products = () => {
     }
   ];
 
-
   const serviceMenuItems = catalogueData.map((section) => ({
     title: section.heading,
     href: `#${section.heading.replace(/\s+/g, '-').toLowerCase()}`
@@ -126,8 +125,6 @@ const Products = () => {
 
         {/* Right Side: Content */}
         <div className="w-full md:w-2/3">
-          
-          {/* ✅ Only show this block when no tab is selected */}
           {!activeSection && (
             <div className="mb-8">
               <h1 className="text-xl sm:text-3xl font-bold text-black mt-2 mb-3">Built for Business</h1>
@@ -145,12 +142,24 @@ const Products = () => {
               catalogueData
                 .filter(section => section.heading === activeSection)
                 .map((section, index) => (
-                  <div key={index} className="bg-gray-200 p-5 rounded-lg shadow-md">
+                  <div key={index} className="p-5 rounded-lg">
                     <h2 className="text-md sm:text-2xl font-semibold text-black mb-2">{section.heading}</h2>
                     <p className="text-gray-900 text-xl mb-2">{section.text}</p>
-                    <ul className="list-disc list-inside text-gray-900 text-lg space-y-1">
+                    <ul className="text-gray-900 text-lg space-y-2">
                       {section.items.map((item, i) => (
-                        <li key={i}>{item}</li>
+                        <li key={i} className="flex items-start gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="green"
+                            viewBox="0 0 16 16"
+                            className="mt-1"
+                          >
+                            <path d="M13.485 1.929a.75.75 0 0 1 0 1.06L6.56 9.914a.75.75 0 0 1-1.06 0L2.515 6.929a.75.75 0 1 1 1.06-1.06l2.24 2.239 6.425-6.425a.75.75 0 0 1 1.06 0z" />
+                          </svg>
+                          {item}
+                        </li>
                       ))}
                     </ul>
                   </div>
