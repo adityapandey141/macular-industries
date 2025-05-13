@@ -22,7 +22,7 @@ const ContactDetails = () => {
             </div>
             <h3 className="text-base sm:text-xl font-medium text-black mb-2">Contact us</h3>
             <p className="text-gray-900 text-sm sm:text-lg break-words">macularelectric@gmail.com</p>
-            <p className="text-gray-900 text-sm sm:text-lg mt-1">+91 762 472 96</p>
+            <p className="text-gray-900 text-sm sm:text-lg mt-1">+917985663499</p>
           </div>
 
       
