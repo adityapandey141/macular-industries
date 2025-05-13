@@ -64,7 +64,7 @@ const AboutUs = () => {
 
           <div className="relative mt-10 md:mt-0">
 
-            <div className="absolute z-1 -top-6 -left-4 w-24 sm:w-36 h-36 sm:h-48">
+            <div className="absolute z-1 -top-6 -left-0 w-24 sm:w-36 h-36 sm:h-48">
               <Image
                 src={Aboutshape}
                 alt="Decorative Shape"
@@ -83,7 +83,7 @@ const AboutUs = () => {
               />
             </div>
 
-            <div className="absolute -bottom-8 -left-6 w-70 h-60 rounded-lg overflow-hidden shadow-md">
+            <div className="absolute -bottom-8 -left-0 w-70 h-60 rounded-lg overflow-hidden shadow-md">
               <Image
                 src={About1}
                 alt="Electrical Panel"

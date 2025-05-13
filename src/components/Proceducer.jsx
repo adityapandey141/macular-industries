@@ -34,7 +34,7 @@ const BlogPosts = [
 
 const Proceducer = () => {
   return (
-    <section className="max-w-7xl mx-auto bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 ">
+    <section className="max-w-7xl mx-auto bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8  mt-[-40px]">
       <div className="text-center mb-12">
           <h2 className="text-2xl sm:text-4xl font-bold text-black mt-4 sm:mt-2 mb-4">How We Ensure Quality</h2>
       </div>
