@@ -103,7 +103,7 @@ const Products = () => {
     <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-6 md:py-8 mb-[-50px]" id="product-us">
       <div className="flex flex-col md:flex-row gap-4 md:gap-10 mb-6">
          <div className="w-full md:w-1/3">
-          <h3 className="text-3xl font-bold text-black">Built for Business</h3>
+          <h3 className="text-4xl font-bold text-black">Built for Business</h3>
         </div>
       </div>
 
@@ -126,7 +126,7 @@ const Products = () => {
 
        
         <div className="hidden md:block">
-          <div className="sticky top-20">
+          <div className="sticky top-10">
             <ul className="space-y-2 sm:space-y-3 mt-2">
               {serviceMenuItems.map((item, index) => (
                 <li key={index} className="border-b border-gray-300 pb-2">

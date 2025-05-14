@@ -24,7 +24,7 @@ const CTA3 = () => {
               Trust Macular for Products You Can Reply On
             </h2>
             <Link href="/contact-us" className="inline-block mt-6 sm:mt-8">
-              <button className="bg-[#16171A] hover:bg-blue-500 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg text-base sm:text-lg font-medium shadow-md transition-all duration-300 w-full sm:w-auto">
+              <button className="bg-[#16171A] hover:bg-[#ffffff] text-white  hover:text-black px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg text-base sm:text-lg font-medium shadow-md transition-all duration-300 w-full sm:w-auto">
                 Partner with Us
               </button>
             </Link>

@@ -1,5 +1,8 @@
 import React from 'react';
-import { MapPin, Mail, Clock } from 'lucide-react';
+import { IoLocationSharp } from 'react-icons/io5';
+import { MdEmail } from 'react-icons/md';
+import { FaPhoneAlt } from 'react-icons/fa';
+
 
 const ContactDetails = () => {
   return (
@@ -10,7 +13,7 @@ const ContactDetails = () => {
    
           <div className="flex flex-col items-center text-center px-4">
             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4">
-              <MapPin className="h-6 w-6 text-black" />
+              <IoLocationSharp className="h-6 w-6 text-black" />
             </div>
             <h3 className="text-base sm:text-xl font-medium text-black mb-2">Visit our place</h3>
             <p className="text-gray-900 text-sm sm:text-lg">Surat (Gujarat), India</p>
@@ -18,7 +21,7 @@ const ContactDetails = () => {
 
           <div className="flex flex-col items-center text-center px-4">
             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4">
-              <Mail className="h-6 w-6 text-black" />
+              <FaPhoneAlt className="h-6 w-6 text-black" />
             </div>
             <h3 className="text-base sm:text-xl font-medium text-black mb-2">Contact us</h3>
             <p className="text-gray-900 text-sm sm:text-lg break-words">macularelectric@gmail.com</p>
@@ -28,13 +31,10 @@ const ContactDetails = () => {
       
           <div className="flex flex-col items-center text-center px-4">
             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4">
-              <Clock className="h-6 w-6 text-black" />
+              <MdEmail  className="h-6 w-6 text-black" />
             </div>
             <h3 className="text-base sm:text-xl font-medium text-black mb-2">Office time</h3>
-            <p className="text-gray-900 text-sm sm:text-lg">
-              Mon - Thu: 8:00 AM - 5:00 PM<br />
-              Friday Closed
-            </p>
+            <p className="text-gray-900 text-sm sm:text-lg break-words">macularelectric@gmail.com</p>
           </div>
 
         </div>
