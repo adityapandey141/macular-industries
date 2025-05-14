@@ -109,7 +109,8 @@ const Products = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
         
-        <div className="md:hidden mb-4">
+     
+        <div className="md:hidden mb-4 sticky top-0 z-10 bg-white py-2">
           <select 
             className="w-full p-2 border border-gray-300 rounded-md"
             value={activeSection}
@@ -123,23 +124,25 @@ const Products = () => {
           </select>
         </div>
 
-     
+       
         <div className="hidden md:block">
-          <ul className="space-y-2 sm:space-y-3 mt-2">
-            {serviceMenuItems.map((item, index) => (
-              <li key={index} className="border-b border-gray-300 pb-2">
-                <button
+          <div className="sticky top-20">
+            <ul className="space-y-2 sm:space-y-3 mt-2">
+              {serviceMenuItems.map((item, index) => (
+                <li key={index} className="border-b border-gray-300 pb-2">
+                  <button
                   className="flex justify-between text-left w-full text-base md:text-lg lg:text-xl font-semibold text-black hover:text-blue-500 mb-2"
-                  onClick={() => setActiveSection(item.title)}
-                >
-                  {item.title}
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" className="shrink-0">
-                    <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-                </button>
-              </li>
-            ))}
-          </ul>
+                    onClick={() => setActiveSection(item.title)}
+                  >
+                    {item.title}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" className="shrink-0">
+                      <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         <div className="col-span-1 md:col-span-2 px-2 md:px-5">
