@@ -28,11 +28,11 @@ const Footer = () => {
           <div className="flex flex-col space-y-3 md:space-y-4">
             <h3 className="text-xl sm:text-2xl font-bold mb-4">Useful Links</h3>
             <ul className="space-y-2 mb-4">
-              <li><a href="/" className="text-yellow-500 hover:text-white transition text-base sm:text-lg">Home</a></li>
-              <li><a href="/about-us" className="hover:text-yellow-500 transition text-base sm:text-lg">About Us</a></li>
-              <li><a href="/product" className="hover:text-yellow-500 transition text-base sm:text-lg">Product</a></li>
-              <li><a href="/quality" className="hover:text-yellow-500 transition text-base sm:text-lg">Quality</a></li>
-              <li><a href="/contact-us" className="hover:text-yellow-500 transition text-base sm:text-lg">Contact Us</a></li>
+              <li><a href="/" className="text-[#E72106] transition text-base sm:text-lg">Home</a></li>
+              <li><a href="/about-us" className="hover:text-[#E72106] transition text-base sm:text-lg">About Us</a></li>
+              <li><a href="/product" className="hover:text-[#E72106] transition text-base sm:text-lg">Product</a></li>
+              <li><a href="/quality" className="hover:text-[#E72106] transition text-base sm:text-lg">Quality</a></li>
+              <li><a href="/contact-us" className="hover:text-[#E72106] transition text-base sm:text-lg">Contact Us</a></li>
             </ul>
            
           </div>
@@ -41,19 +41,19 @@ const Footer = () => {
             <h3 className="text-xl sm:text-2xl font-bold mb-4">Get In Touch</h3>
             <div className="space-y-3">
               <div className="flex items-start">
-                <FaPhoneAlt className="text-yellow-500 mr-3 mt-1" size={22} />
-                <a href="tel:+917985663499" className="text-sm sm:text-lg hover:text-yellow-500">
+                <FaPhoneAlt className="text-whaite mr-3 mt-1" size={22} />
+                <a href="tel:+917985663499" className="text-sm sm:text-lg hover:text-[#E72106]">
                   +91 7985663499
                 </a>
               </div>
               <div className="flex items-start">
-                <MdEmail className="text-yellow-500 mr-3 mt-1" size={22} />
-                <a href="mailto:macularelectric@gmail.com" className="text-sm sm:text-lg hover:text-yellow-500 break-all">
+                <MdEmail className="text-white mr-3 mt-1" size={22} />
+                <a href="mailto:macularelectric@gmail.com" className="text-sm sm:text-lg hover:text-[#E72106] break-all">
                   macularelectric@gmail.com
                 </a>
               </div>
               <div className="flex items-start">
-                <IoLocationSharp className="text-yellow-500 mr-3 mt-1" size={22} />
+                <IoLocationSharp className="text-white mr-3 mt-1" size={22} />
                 <a href="https://www.google.com/maps/place/Surat+Gujarat+India" className="text-sm sm:text-lg hover:text-yellow-500">
                   Surat (Gujarat), India
                 </a>
