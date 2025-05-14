@@ -19,16 +19,20 @@ const CTA3 = () => {
               priority
             />
           </div>
-          <div className="w-full md:w-1/2 text-center md:text-left">
-              <h2 className="text-4xl font-bold text-white">
-              Trust Macular for Products You Can Reply On
-            </h2>
-            <Link href="/contact-us" className="inline-block mt-6 sm:mt-8">
-              <button className="bg-[#16171A] hover:bg-[#ffffff] text-white  hover:text-black px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg text-base sm:text-lg font-medium shadow-md transition-all duration-300 w-full sm:w-auto">
+           
+  <div className="w-full md:w-1/2 text-center md:text-left">
+       
+        <h2 className="text-4xl font-bold text-white mt-4">
+        Trust Macular for Products You Can Reply On
+        </h2>
+       
+       <Link href="/contact-us" className="inline-block mt-6 sm:mt-8">
+           <button className="bg-[#16171A] hover:bg-[#ffffff] text-white  hover:text-black px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg text-base sm:text-lg font-medium shadow-md transition-all duration-300 w-full sm:w-auto">
                 Partner with Us
               </button>
-            </Link>
-          </div>
+        </Link>
+      </div>
+          
         </div>
       </div>
     </section>
