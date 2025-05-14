@@ -20,7 +20,7 @@ const CTA3 = () => {
             />
           </div>
           <div className="w-full md:w-1/2 text-center md:text-left">
-              <h2 className="text-4xl font-bold text-white mt-4">
+              <h2 className="text-4xl font-bold text-white">
               Trust Macular for Products You Can Reply On
             </h2>
             <Link href="/contact-us" className="inline-block mt-6 sm:mt-8">
