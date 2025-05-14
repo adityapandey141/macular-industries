@@ -24,7 +24,6 @@ const ContactDetails = () => {
               <FaPhoneAlt className="h-6 w-6 text-black" />
             </div>
             <h3 className="text-base sm:text-xl font-medium text-black mb-2">Contact us</h3>
-            <p className="text-gray-900 text-sm sm:text-lg break-words">macularelectric@gmail.com</p>
             <p className="text-gray-900 text-sm sm:text-lg mt-1">+917985663499</p>
           </div>
 
@@ -33,7 +32,7 @@ const ContactDetails = () => {
             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4">
               <MdEmail  className="h-6 w-6 text-black" />
             </div>
-            <h3 className="text-base sm:text-xl font-medium text-black mb-2">Office time</h3>
+            <h3 className="text-base sm:text-xl font-medium text-black mb-2">Email Address</h3>
             <p className="text-gray-900 text-sm sm:text-lg break-words">macularelectric@gmail.com</p>
           </div>
 
