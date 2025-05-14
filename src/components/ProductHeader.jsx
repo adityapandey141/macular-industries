@@ -13,7 +13,7 @@ const ProductHeader = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-12 md:py-24 flex items-center h-full">
           <div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black">
-              PRODUCT
+              Our Product Line
             </h2>
           </div>
         </div>

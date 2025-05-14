@@ -28,11 +28,11 @@ const Footer = () => {
           <div className="flex flex-col space-y-3 md:space-y-4">
             <h3 className="text-xl sm:text-2xl font-bold mb-4">Useful Links</h3>
             <ul className="space-y-2 mb-4">
-              <li><a href="/" className="text-[#E72106] transition text-base sm:text-lg">Home</a></li>
-              <li><a href="/about-us" className="hover:text-[#E72106] transition text-base sm:text-lg">About Us</a></li>
-              <li><a href="/product" className="hover:text-[#E72106] transition text-base sm:text-lg">Product</a></li>
-              <li><a href="/quality" className="hover:text-[#E72106] transition text-base sm:text-lg">Quality</a></li>
-              <li><a href="/contact-us" className="hover:text-[#E72106] transition text-base sm:text-lg">Contact Us</a></li>
+              <li><a href="/" className="text-[#ED2236] transition text-base sm:text-lg">Home</a></li>
+              <li><a href="/about-us" className="hover:text-[#ED2236] transition text-base sm:text-lg">About Us</a></li>
+              <li><a href="/product" className="hover:text-[#ED2236] transition text-base sm:text-lg">Product</a></li>
+              <li><a href="/quality" className="hover:text-[#ED2236] transition text-base sm:text-lg">Quality</a></li>
+              <li><a href="/contact-us" className="hover:text-[#ED2236] transition text-base sm:text-lg">Contact Us</a></li>
             </ul>
            
           </div>
@@ -42,19 +42,19 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start">
                 <FaPhoneAlt className="text-whaite mr-3 mt-1" size={22} />
-                <a href="tel:+917985663499" className="text-sm sm:text-lg hover:text-[#E72106]">
+                <a href="tel:+917985663499" className="text-sm sm:text-lg hover:text-[#ED2236]">
                   +91 7985663499
                 </a>
               </div>
               <div className="flex items-start">
                 <MdEmail className="text-white mr-3 mt-1" size={22} />
-                <a href="mailto:macularelectric@gmail.com" className="text-sm sm:text-lg hover:text-[#E72106] break-all">
+                <a href="mailto:macularelectric@gmail.com" className="text-sm sm:text-lg hover:text-[#ED2236] break-all">
                   macularelectric@gmail.com
                 </a>
               </div>
               <div className="flex items-start">
                 <IoLocationSharp className="text-white mr-3 mt-1" size={22} />
-                <a href="https://www.google.com/maps/place/Surat+Gujarat+India" className="text-sm sm:text-lg hover:text-yellow-500">
+                <a href="https://www.google.com/maps/place/Surat+Gujarat+India" className="text-sm sm:text-lg hover:text-[#ED2236]">
                   Surat (Gujarat), India
                 </a>
               </div>
@@ -64,13 +64,13 @@ const Footer = () => {
             <h4 className="text-xl sm:text-2xl font-bold mb-4">Social</h4>
             <div className="flex space-x-4">
               <a href="#" aria-label="Facebook">
-                <FaFacebook className="hover:text-[#ED3E40]" size={28} />
+                <FaFacebook className="hover:text-[#ED2236]" size={28} />
               </a>
               <a href="#" aria-label="Twitter">
-                <FaTwitter className="hover:text-[#ED3E40]" size={28} />
+                <FaTwitter className="hover:text-[#ED2236]" size={28} />
               </a>
               <a href="#" aria-label="YouTube">
-                <FaYoutube className="hover:text-[#ED3E40]" size={28} />
+                <FaYoutube className="hover:text-[#ED2236]" size={28} />
               </a>
             </div>
           </div>

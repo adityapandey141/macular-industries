@@ -6,7 +6,7 @@ import { BiShield } from 'react-icons/bi';
 import About1 from "../assets/About1.jpg";
 import About2 from "../assets/About2.jpg";
 import Aboutshape from "../assets/Aboutshape.png";
-import shape1 from "../assets/shape1.png";
+// import shape1 from "../assets/shape1.png";
 
 const AboutUs = () => {
   return (

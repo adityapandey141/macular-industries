@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Asign1 from "../assets/Asign1.png";
+
 import Athumb1 from "../assets/Athumb1.jpg";
 import Athumb2 from "../assets/Athumb2.jpg";
 
@@ -120,15 +120,7 @@ const About = () => {
                 Know more
               </button>
             </Link>
-            {/* <div className="w-32 sm:w-40">
-              <Image 
-                src={Asign1}
-                alt="sign" 
-                width={200} 
-                height={200}
-                className="object-contain"
-              />
-            </div> */}
+           
           </div>
         </div>
       </div>

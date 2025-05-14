@@ -9,10 +9,15 @@ const QualityHeader = () => {
     >
       <div className="bg-gradient-to-r from-green-50 via-yellow-50 to-purple-50 bg-opacity-10 w-full h-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-start">
-          <div>
+            <div className="text-black max-w-xl text-center md:text-left space-y-5 sm:space-y-6">
             <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-black ">
-              QUALITY
+             Commitment to Quality
             </h2>
+             <div>
+          <p className="text-lg  text-gray-600 ">
+            Quality is our way of doing business. Every product undergoes strict in-house inspections and durability tests to ensure it meets the highest industry standards.
+            </p>
+            </div>
           </div>
         </div>
       </div>
