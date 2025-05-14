@@ -58,13 +58,16 @@ const Gallery = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
        
         <div className="text-center mb-12">
-          <span className="text-sm text-gray-600 ">
+          <div className="mb-2 sm:mb-4">
+              <span className="text-lg text-gray-600 ">
                 Gallery
               </span>
-        
-            <h2 className="text-2xl sm:text-4xl font-bold text-black mt-4 sm:mt-2 mb-4">
-            See the Macular Difference
-          </h2>
+            </div>
+
+            <h1 className="text-2xl sm:text-4xl font-bold text-black mt-4 sm:mt-2 mb-4">
+               See the Macular Difference
+            </h1>
+         
         </div>
 
         

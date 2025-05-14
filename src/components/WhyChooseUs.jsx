@@ -83,23 +83,6 @@ const WhyChooseUs = () => {
         </div>
 
      
-        <div className="w-full lg:w-1/2 flex items-center justify-center relative">
-          <div className="relative w-full aspect-square max-w-md">
-            {/* <div
-              className="absolute inset-0 overflow-hidden rounded-full"
-              style={{
-                clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
-              }}
-            >
-              <Image
-                src={Wshape}
-                alt="Electrician working"
-                fill
-                className="object-cover"
-              />
-            </div> */}
-          </div>
-        </div>
       </div>
 
     

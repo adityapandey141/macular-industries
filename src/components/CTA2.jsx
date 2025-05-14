@@ -36,11 +36,7 @@ const CTA2 = () => {
               <h2 className="text-3xl font-bold">
                 Ready to Partner with a Trusted Manufacturer?
               </h2>
-              {success && (
-                 <p className="mt-2 text-white text-2xl font-semibold">
-                  ✅ Email submitted successfully!
-                </p>
-              )}
+              
             </div>
 
             <div className="md:w-1/2">
@@ -53,6 +49,7 @@ const CTA2 = () => {
                   required
                   className="px-4 py-3 w-full sm:flex-grow border border-black bg-white text-black rounded-md sm:rounded-r-none mb-2 sm:mb-0"
                 />
+                
                 <button
                   type="submit"
                   disabled={status.submitting}
@@ -87,8 +84,17 @@ const CTA2 = () => {
                   ) : (
                     <>Request a Quote</>
                   )}
+                  
                 </button>
+               
               </form>
+               <div className="w-2/3">
+                {success && (
+                 <p className=" text-white text-xl font-semibold">
+                  ✅ Email submitted successfully!
+                </p>
+              )}
+              </div>
             </div>
           </div>
         </div>

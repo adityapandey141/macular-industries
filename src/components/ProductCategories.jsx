@@ -80,14 +80,16 @@ const ProductCategories = () => {
     <div className="w-full bg-white pt-6 sm:pt-10 md:pt-0">
       <section className="px-4 sm:px-6 lg:px-8 py-10 sm:py-14 md:py-16">
         <div className="max-w-7xl mx-auto">
-          <div className="font-semibold mb-2 sm:mb-3">
-            <span className="text-sm text-gray-600 ">
-              Product Range
-            </span>
-          </div>
-           <h1 className="text-2xl sm:text-4xl font-bold text-black mt-4 sm:mt-2 mb-4">
-            That Fits Every Project, Big or Small
-          </h1>
+           <div className="mb-2 sm:mb-4">
+              <span className="text-sm text-gray-600 ">
+               Product Range
+              </span>
+            </div>
+
+            <h1 className="text-2xl sm:text-4xl font-bold text-black mt-4 sm:mt-2 mb-4">
+              That Fits Every Project, Big or Small
+            </h1>
+         
         </div>
       </section>
 
