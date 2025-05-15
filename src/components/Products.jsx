@@ -129,7 +129,7 @@ const Products = () => {
               {serviceMenuItems.map((item, index) => (
                 <li key={index} className="border-b border-gray-300 pb-2">
                   <button
-                  className="flex justify-between text-left w-full text-base md:text-lg lg:text-xl font-semibold text-black hover:text-blue-500 mb-2"
+                  className="flex justify-between items-center text-left w-full text-base md:text-lg lg:text-xl font-semibold text-black hover:text-blue-500 mb-2"
                     onClick={() => setActiveSection(item.title)}
                   >
                     {item.title}
