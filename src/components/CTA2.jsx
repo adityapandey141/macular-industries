@@ -48,11 +48,11 @@ const CTA2 = () => {
                   required
                   className="px-4 py-3 w-full sm:flex-1 border border-black bg-white text-black rounded-md"
                 />
-                
+               
                 <button
                   type="submit"
                   disabled={status.submitting}
-                  className={`sm:min-w-40 px-6 py-3 rounded-md border border-black bg-white text-black hover:text-white hover:bg-[#16171A] transition font-semibold flex items-center justify-center gap-2 ${
+                  className={`sm:min-w-40 px-6 py-3 rounded-md border border-black bg-white text-black hover:text-white hover:bg-[#16171A]  font-semibold flex items-center justify-center gap-2rounded transition-all duration-300 hover:shadow-md cursor-pointer ${
                     status.submitting ? 'opacity-50 cursor-not-allowed' : ''
                   }`}
                 >

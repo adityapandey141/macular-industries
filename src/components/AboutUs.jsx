@@ -47,9 +47,9 @@ const AboutUs = () => {
 
             <div className="flex flex-col sm:flex-row sm:items-center gap-4">
               <Link href="/about-us">
-              <button className="bg-[#ED2236] hover:bg-[#16171A] text-white font-medium py-2 sm:py-3 px-4  rounded-md flex items-center mx-auto md:mx-0 transition duration-300">
-                Know more
-              </button>
+              <button className="bg-[#ED2236] hover:bg-[#16171A] text-white font-medium py-2 sm:py-3 px-4  rounded transition-all duration-300 hover:shadow-md cursor-pointer">
+             Know more
+            </button>
             </Link>
               {/* <div className="w-30 h-20 relative">
                 <Image

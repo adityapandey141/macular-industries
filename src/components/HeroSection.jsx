@@ -39,11 +39,11 @@ const HeroSection = () => {
               Serving dealers, distributors, and suppliers with high-quality solutions directly from our manufacturing floor.
             </p>
             <div className="flex justify-center md:justify-start">
-              <Link href="/product">
-                <button className="bg-[#ED2236] hover:bg-[#16171A] text-white font-medium py-4 px-4 rounded transition-all duration-300 hover:shadow-md">
-                  Explore Our Products
-                </button>
-              </Link>
+              <a href="/product">
+                <button className="bg-[#ED2236] hover:bg-[#16171A] text-white font-medium py-4 px-4 rounded transition-all duration-300 hover:shadow-md cursor-pointer">
+             Explore Our Products
+           </button>
+              </a>
             </div>
           </div>
         </div>
