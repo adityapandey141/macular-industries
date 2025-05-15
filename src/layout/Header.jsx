@@ -164,7 +164,7 @@ const Header = () => {
           <div className="pt-4">
             <Link 
               href="/contact-us" 
-              className="block w-full px-4 py-3 bg-[#ED2236] text-gray-800 hover:bg-orange-500 rounded-lg text-center font-medium transition-colors duration-200"
+              className="block w-full bg-[#ED2236] hover:bg-[#16171A] text-white font-medium py-4 px-4 rounded-lg text-center  transition-colors duration-200"
               onClick={handleHashLinkClick}
             >
              MAKE APPOINMENT
