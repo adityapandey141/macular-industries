@@ -22,7 +22,7 @@ const CTA2 = () => {
   };
 
   return (
-    <div className="w-full bg-white text-white mb-[-100px]">
+    <div className="w-full bg-white text-white mb-[-50px] mt-[-50px] ">
       <div className="max-w-7xl mx-auto px-4 py-8">
         <div className="relative bg-red-600 rounded-md overflow-hidden p-8">
           <div className="absolute top-0 right-0 left-0 bottom-0 opacity-10">
@@ -33,26 +33,29 @@ const CTA2 = () => {
 
           <div className="flex flex-col md:flex-row md:items-center justify-between relative z-10">
             <div className="md:w-1/2 mb-6 md:mb-0">
-              <h2 className="text-3xl font-bold">
-                Ready to Partner with a Trusted Manufacturer?
-              </h2>
+            
+                
+            <h1 className="text-2xl sm:text-4xl font-bold text-white mt-4 sm:mt-2 mb-4">
+              Ready to Partner with a Trusted Manufacturer?
+            </h1>
+                
             </div>
 
             <div className="md:w-1/2">
-              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row ">
+              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Email address"
                   required
-                  className="px-4 py-3 w-full sm:flex-1 border border-black bg-white text-black rounded-md"
+                  className="px-4 py-3 w-full sm:flex-1   bg-white text-black rounded-md"
                 />
                
                 <button
                   type="submit"
                   disabled={status.submitting}
-                  className={`sm:min-w-40 px-6 py-3 rounded-md border border-black bg-white text-black hover:text-white hover:bg-[#16171A]  font-semibold flex items-center justify-center gap-2rounded transition-all duration-300 hover:shadow-md cursor-pointer ${
+                  className={`sm:min-w-40 px-6 py-3 rounded-md   bg-white text-black hover:text-white hover:bg-[#16171A]  font-semibold flex items-center justify-center gap-2 rounded transition-all duration-300 hover:shadow-md cursor-pointer ${
                     status.submitting ? 'opacity-50 cursor-not-allowed' : ''
                   }`}
                 >

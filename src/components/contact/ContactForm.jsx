@@ -48,10 +48,11 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto p-4 sm:p-6 bg-white rounded-lg shadow-md mt-10 mb-10 " id="contactform">
-      <h2 className="text-4xl  font-bold text-black mb-6 text-center sm:text-left">
+    <div className="w-full max-w-7xl mx-auto p-4 sm:p-6 bg-white rounded-lg shadow-md mt-10 mb-[100px] md:mb-[120px] ">
+      <h1 className="text-2xl sm:text-4xl font-bold text-black mb-6 text-center sm:text-left">
+       
         Share your requirements here
-      </h2>
+      </h1>
 
       <div className="grid grid-cols-1 gap-6">
         {status.submitted ? (

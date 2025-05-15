@@ -100,7 +100,7 @@ const Products = () => {
   }, [activeSection]);
 
   return (
-    <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-6 md:py-8 mb-[-50px]">
+    <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-6 md:py-8">
       <div className="flex flex-col md:flex-row gap-4 md:gap-10 mb-6">
         <div className="w-full md:w-1/3">
           <h3 className="text-3xl font-bold text-black">Built for Business</h3>

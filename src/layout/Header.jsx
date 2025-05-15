@@ -21,6 +21,13 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
+    // Prevent body scrolling when mobile menu is open
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
     const handleClickOutside = (event) => {
       const mobileMenu = document.getElementById('mobile-menu');
       const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -39,70 +46,66 @@ const Header = () => {
     document.addEventListener('click', handleClickOutside);
 
     return () => {
+      document.body.style.overflow = 'unset';
       document.removeEventListener('click', handleClickOutside);
     };
   }, [isMenuOpen]);
 
+  // Close menu when clicking on a link with a hash
+  const handleHashLinkClick = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
-    <header className={`sticky top-0 w-full z-30 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-4' : 'bg-white shadow-sm py-6'}`}>
-      <div className=" max-w-7xl mx-auto   flex items-center justify-between">
+    <header className={`sticky top-0 w-full z-30 transition-all duration-300 ${
+      isScrolled ? 'bg-white shadow-md py-6' : 'bg-white shadow-sm py-3 md:py-6'
+    }`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center">
-          <Image
+         <Image
             src={LOGO1}
             alt="Logo"
             width={120}
             height={120}
-            className="object-contain "
+            className="object-contain"
           />
         </Link>
 
-        <nav className="hidden md:flex space-x-12">
-        <Link
-              href="/"
-              className="py-4 px-6 font-medium hover:bg-[#ED2236] hover:text-white rounded"
-            >
-              HOME
-            </Link>
-            <Link
-              href="/about-us"
-              className="py-4 px-6 font-medium hover:bg-[#ED2236] hover:text-white rounded"
-            >
-              ABOUT US
-            </Link>
-            <Link
-              href="/product"
-              className="py-4 px-6 font-medium hover:bg-[#ED2236] hover:text-white rounded"
-            >
-              PRODUCT
-            </Link>
-            <Link
-              href="/quality"
-              className="py-4 px-6 font-medium hover:bg-[#ED2236] hover:text-white rounded"
-            >
-              QUALITY
-            </Link>
-            <Link
-              href="/contact-us"
-              className="py-4 px-6 font-medium hover:bg-[#ED2236] hover:text-white rounded"
-            >
-              CONTACT
-            </Link>
+        
+        <nav className="hidden md:flex items-center space-x-6 lg:space-x-12">
+          <Link href="/" className="text-[#ED2236] hover:text-[#FF6900] font-bold text-sm lg:text-base transition-colors duration-200">
+            HOME
+          </Link>
+          <a href="/about-us" className="text-gray-500 hover:text-[#ED2236] font-bold text-sm lg:text-base transition-colors duration-200">
+            ABOUT US
+          </a>
+          <a href="/product" className="text-gray-500 hover:text-[#ED2236] font-bold text-sm lg:text-base transition-colors duration-200">
+            PRODUCT
+          </a>
+          <a href="/quality" className="text-gray-500 hover:text-[#ED2236] font-bold text-sm lg:text-base transition-colors duration-200">
+            QUALITY
+          </a>
+          <Link href="/contact-us" className="text-gray-500 hover:text-[#ED2236] font-bold text-sm lg:text-base transition-colors duration-200">
+            CONTACT
+          </Link>
         </nav>
+
         <div className="hidden md:block">
           <a href="/" className="bg-[#ED2236] hover:bg-[#16171A] text-white font-medium py-4 px-4 rounded transition-all duration-300 hover:shadow-md">
-          MAKE APPOINMENT
+            MAKE APPOINMENT
           </a>
         </div>
-        
+
 
         <button
           id="mobile-menu-button"
-          className="md:hidden text-gray-800 hover:text-gray-600 transition-colors duration-200"
+          className="md:hidden text-gray-800 hover:text-gray-600 p-2 transition-colors duration-200"
           onClick={(e) => {
             e.stopPropagation();
             setIsMenuOpen(!isMenuOpen);
           }}
           aria-label="Toggle mobile menu"
+          aria-expanded={isMenuOpen}
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {isMenuOpen ? (
@@ -114,47 +117,68 @@ const Header = () => {
         </button>
       </div>
 
-      {isMenuOpen && (
-        <div
-          id="mobile-menu"
-          className="md:hidden bg-[#ED2236] absolute top-full left-0 right-0 shadow-md z-20 max-h-screen overflow-y-auto"
-        >
-          <div className="px-4 py-3 space-y-1">
-          <Link
-            href="/"
-            className="block py-4 px-6 text-white hover:bg-green-700"
+     
+      <div
+        id="mobile-menu"
+        className={`md:hidden fixed inset-0 bg-white z-20 transform ${
+          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        } transition-transform duration-300 ease-in-out pt-20`}
+        style={{ top: isScrolled ? '56px' : '72px' }}
+      >
+        <div className="px-4 py-3 space-y-3">
+          <Link 
+            href="/" 
+            className="block px-4 py-3 text-gray-800 hover:bg-gray-100 rounded-lg font-medium transition-colors duration-200" 
+            onClick={handleHashLinkClick}
           >
             HOME
           </Link>
-          <Link
-            href="/about-us"
-            className="block py-4 px-6 text-white hover:bg-green-700"
+          <a 
+            href="/about-us" 
+            className="block px-4 py-3 text-gray-800 hover:bg-gray-100 rounded-lg font-medium transition-colors duration-200" 
+            onClick={handleHashLinkClick}
           >
             ABOUT US
-          </Link>
-          <Link
-            href="/product"
-            className="block py-4 px-6 text-white hover:bg-green-700"
+          </a>
+          <a 
+            href="/product" 
+            className="block px-4 py-3 text-gray-800 hover:bg-gray-100 rounded-lg font-medium transition-colors duration-200" 
+            onClick={handleHashLinkClick}
           >
             PRODUCT
-          </Link>
-          <Link
-            href="/quality"
-            className="block py-4 px-6 text-white hover:bg-green-700"
+          </a>
+          <a 
+            href="/quality" 
+            className="block px-4 py-3 text-gray-800 hover:bg-gray-100 rounded-lg font-medium transition-colors duration-200" 
+            onClick={handleHashLinkClick}
           >
             QUALITY
-          </Link>
-          <Link
-            href="/contact-us"
-            className="block py-4 px-6 text-white hover:bg-green-700"
+          </a>
+          <Link 
+            href="/contact-us" 
+            className="block px-4 py-3 text-gray-800 hover:bg-gray-100 rounded-lg font-medium transition-colors duration-200"
+            onClick={handleHashLinkClick}
           >
             CONTACT
           </Link>
-            <a href="/" className="block px-3 py-2 bg-yellow-400 text-gray-800 hover:bg-yellow-500 rounded text-center font-medium mt-4 transition-colors duration-200" onClick={() => setIsMenuOpen(false)}>
-              MAKE APPOINMENT
-            </a>
+          <div className="pt-4">
+            <Link 
+              href="/contact-us" 
+              className="block w-full px-4 py-3 bg-[#ED2236] text-gray-800 hover:bg-orange-500 rounded-lg text-center font-medium transition-colors duration-200"
+              onClick={handleHashLinkClick}
+            >
+             MAKE APPOINMENT
+            </Link>
           </div>
         </div>
+      </div>
+
+  
+      {isMenuOpen && (
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-50 z-10 md:hidden"
+          onClick={() => setIsMenuOpen(false)}
+        />
       )}
     </header>
   );
