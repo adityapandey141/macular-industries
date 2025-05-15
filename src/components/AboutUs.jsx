@@ -47,7 +47,7 @@ const AboutUs = () => {
 
             <div className="flex flex-col sm:flex-row sm:items-center gap-4">
               <Link href="/about-us">
-              <button className="bg-[#ED2236] hover:bg-[#16171A] text-white  font-bold py-2 sm:py-3 px-5 sm:px-7 rounded-md flex items-center mx-auto md:mx-0 transition duration-300">
+              <button className="bg-[#ED2236] hover:bg-[#16171A] text-white font-medium py-2 sm:py-3 px-4  rounded-md flex items-center mx-auto md:mx-0 transition duration-300">
                 Know more
               </button>
             </Link>

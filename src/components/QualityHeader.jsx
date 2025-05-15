@@ -4,7 +4,7 @@ import HBanner from "../assets/HBanner.jpg";
 const QualityHeader = () => {
   return (
     <section
-      className="w-full h-56 sm:h-72 md:h-96 bg-cover bg-center bg-no-repeat"
+      className="w-full h-56 sm:h-72 bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${HBanner})` }}
     >
       <div className="bg-gradient-to-r from-green-50 via-yellow-50 to-purple-50 bg-opacity-10 w-full h-full">

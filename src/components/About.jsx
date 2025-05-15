@@ -4,6 +4,8 @@ import Link from 'next/link';
 
 import Athumb1 from "../assets/Athumb1.jpg";
 import Athumb2 from "../assets/Athumb2.jpg";
+import { FaBolt, FaTools } from 'react-icons/fa';
+import { BiShield } from 'react-icons/bi';
 
 const About = () => {
   return (
@@ -68,31 +70,33 @@ const About = () => {
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-8 space-y-4 sm:space-y-0 mb-8">
             <div className="flex items-center">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-red-50 flex items-center justify-center mr-3">
-                <svg className="text-red-500 w-5 h-5 sm:w-6 sm:h-6" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeWidth="2">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-red-500 flex items-center justify-center mr-3">
+                <BiShield className="text-white text-xl sm:text-3xl" />
+                {/* <svg className="text-red-500 w-5 h-5 sm:w-6 sm:h-6" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeWidth="2">
                   <circle cx="12" cy="12" r="10"/>
                   <path d="M12 8v4l2 2"/>
                   <path d="M8.93 16.93a5.5 5.5 0 1 0 6.14-9"/>
-                </svg>
+                </svg> */}
               </div>
-              <h1 className="font-semibold text-black text-xl">
+              <h4 className="font-semibold text-gray-800 text-lg">
                 Expert lectrician
-              </h1>
+              </h4>
             </div>
 
             {/* <div className="w-2 h-2 bg-red-500 rotate-45 hidden sm:block"></div> */}
 
             <div className="flex items-center">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-red-50 flex items-center justify-center mr-3">
-                <svg className="text-red-500 w-5 h-5 sm:w-6 sm:h-6" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeWidth="2">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-red-500 flex items-center justify-center mr-3">
+                <FaTools className="text-white text-xl sm:text-3xl" />
+                {/* <svg className="text-red-500 w-5 h-5 sm:w-6 sm:h-6" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeWidth="2">
                   <circle cx="12" cy="12" r="10"/>
                   <path d="M12 16v-4"/>
                   <path d="M12 8h.01"/>
-                </svg>
+                </svg> */}
               </div>
-              <h1 className="font-semibold text-black text-xl">
+              <h4 className="font-semibold text-gray-800 text-lg">
                 Safety assurance
-              </h1>
+              </h4>
             </div>
           </div>
 
@@ -116,7 +120,7 @@ const About = () => {
          
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-start gap-4">
             <Link href="/contact-us">
-              <button className="bg-[#ED2236] hover:bg-[#16171A] text-white font-medium py-2 sm:py-3 px-5 sm:px-7 rounded-md flex items-center mx-auto md:mx-0 transition duration-300">
+              <button className="bg-[#ED2236] hover:bg-[#16171A] text-white font-medium py-2 sm:py-3 px-4 rounded-md flex items-center mx-auto md:mx-0 transition duration-300">
                 Know more
               </button>
             </Link>

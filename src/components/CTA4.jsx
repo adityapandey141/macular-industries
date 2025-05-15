@@ -36,24 +36,23 @@ const CTA4 = () => {
               <h2 className="text-3xl font-bold">
                 Ready to Partner with a Trusted Manufacturer?
               </h2>
-              
             </div>
 
             <div className="md:w-1/2">
-              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row">
+              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row ">
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Email address"
                   required
-                  className="px-4 py-3 w-full sm:flex-grow border border-black bg-white text-black rounded-md sm:rounded-r-none mb-2 sm:mb-0"
+                  className="px-4 py-3 w-full sm:flex-1 border border-black bg-white text-black rounded-md"
                 />
                 
                 <button
                   type="submit"
                   disabled={status.submitting}
-                  className={`w-full sm:w-auto py-3 px-6 rounded border border-black bg-white text-black hover:text-white hover:bg-[#16171A] transition font-semibold flex items-center justify-center gap-2 ${
+                  className={`sm:min-w-40 px-6 py-3 rounded-md border border-black bg-white text-black hover:text-white hover:bg-[#16171A] transition font-semibold flex items-center justify-center gap-2 ${
                     status.submitting ? 'opacity-50 cursor-not-allowed' : ''
                   }`}
                 >
@@ -73,27 +72,25 @@ const CTA4 = () => {
                           stroke="currentColor"
                           strokeWidth="4"
                         ></circle>
-                        <path
+                        {/* <path
                           className="opacity-75"
                           fill="currentColor"
                           d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                        ></path>
+                        ></path> */}
                       </svg>
                       Sending...
                     </>
                   ) : (
-                    <>Request a Quote</>
+                    "Request a Quote"
                   )}
-                  
                 </button>
-               
               </form>
-               <div className="w-2/3">
+              <div className="mt-2">
                 {success && (
-                 <p className=" text-white text-xl font-semibold">
-                  ✅ Email submitted successfully!
-                </p>
-              )}
+                  <p className="text-white text-sm font-semibold">
+                    ✅ Email submitted successfully!
+                  </p>
+                )}
               </div>
             </div>
           </div>
