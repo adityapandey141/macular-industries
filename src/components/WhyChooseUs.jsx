@@ -44,25 +44,24 @@ const WhyChooseUs = () => {
       <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-10 lg:gap-20 relative z-10">
        
         <div className="w-full lg:w-1/2">
-         <span className="text-sm text-white ">
-                Why Choose Us?
-              </span>
+          <span className="text-sm text-white">
+            Why Choose Us?
+          </span>
          
-         
-            <h1 className="text-2xl sm:text-4xl font-bold text-white mt-4 sm:mt-2 mb-4">
-           Manufactured with Care
-            </h1>
+          <h1 className="text-2xl sm:text-4xl font-bold text-white mt-4 sm:mt-2 mb-4">
+            Manufactured with Care
+          </h1>
 
-          <p className="text-white text-base  mb-6 max-w-xl">
+          <p className="text-white text-base mb-6 max-w-xl">
             From raw materials to the final finish, every step is controlled, checked, and refined—
-            because when it comes to safety and quality, we don’t take shortcuts.
+            because when it comes to safety and quality, we don't take shortcuts.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {benefits.map((benefit) => (
               <div
                 key={benefit.id}
-                className="flex items-start p-4 sm:p-5 bg-gray-900 rounded-lg shadow-md"
+                className="flex items-center p-4 sm:p-5 bg-gray-900 rounded-lg shadow-md"
               >
                 <div className="bg-red-500 rounded-full w-12 h-12 flex items-center justify-center mr-4 shrink-0">
                   <svg
@@ -81,13 +80,10 @@ const WhyChooseUs = () => {
             ))}
           </div>
         </div>
-
-     
       </div>
 
-    
       <div className="absolute whyusbanner opacity-50 pointer-events-none">
-        <Image src={choose1} alt="Background Pattern"  className="" />
+        <Image src={choose1} alt="Background Pattern" className="" />
       </div>
     </section>
   );

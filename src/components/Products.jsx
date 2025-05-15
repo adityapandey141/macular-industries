@@ -127,7 +127,7 @@ const Products = () => {
           <div className="sticky top-20 bg-white ">
             <ul className="space-y-2 mt-2">
               {serviceMenuItems.map((item, index) => (
-                <li key={index} className="border-b pb-2">
+                <li key={index} className="border-b border-gray-300 pb-2">
                   <button
                   className="flex justify-between text-left w-full text-base md:text-lg lg:text-xl font-semibold text-black hover:text-blue-500 mb-2"
                     onClick={() => setActiveSection(item.title)}
@@ -173,15 +173,13 @@ const Products = () => {
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
                       {section.items.map((item, i) => (
-                        <div key={i} className="flex items-start p-2 sm:p-3 bg-gray-900 rounded-lg shadow-md">
+                        <div key={i} className="flex items-center p-2 sm:p-3 bg-gray-900 rounded-lg shadow-md">
                           <div className="bg-red-500 rounded-full w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center mr-2 sm:mr-4 shrink-0">
-                            <svg width="12" height="12" sm="15" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="text-white">
+                            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="text-white">
                               <path d="M8 0L9.8 5.4H15.5L10.9 8.8L12.7 14.2L8 10.8L3.3 14.2L5.1 8.8L0.5 5.4H6.2L8 0Z"></path>
                             </svg>
                           </div>
-                          <div className="flex items-center justify-center h-full">
-                            <span className="text-xs sm:text-sm md:text-base font-medium text-white">{item}</span>
-                          </div>
+                          <span className="text-xs sm:text-sm md:text-base font-medium text-white">{item}</span>
                         </div>
                       ))}
                     </div>
@@ -197,7 +195,4 @@ const Products = () => {
   );
 };
 
-
 export default Products;
-
- 
