@@ -73,19 +73,19 @@ const Header = () => {
 
         
         <nav className="hidden md:flex items-center space-x-6 lg:space-x-12">
-          <Link href="/" className="text-[#ED2236] hover:text-[#FF6900] font-bold text-sm lg:text-base transition-colors duration-200">
+          <Link href="/" className="text-[#ED2236] font-bold text-sm lg:text-base transition-colors duration-200">
             HOME
           </Link>
-          <a href="/about-us" className="text-gray-500 hover:text-[#ED2236] font-bold text-sm lg:text-base transition-colors duration-200">
+          <a href="/about-us" className="text-black hover:text-[#ED2236] font-bold text-sm lg:text-base transition-colors duration-200">
             ABOUT US
           </a>
-          <a href="/product" className="text-gray-500 hover:text-[#ED2236] font-bold text-sm lg:text-base transition-colors duration-200">
+          <a href="/product" className="text-black hover:text-[#ED2236] font-bold text-sm lg:text-base transition-colors duration-200">
             PRODUCT
           </a>
-          <a href="/quality" className="text-gray-500 hover:text-[#ED2236] font-bold text-sm lg:text-base transition-colors duration-200">
+          <a href="/quality" className="text-black hover:text-[#ED2236] font-bold text-sm lg:text-base transition-colors duration-200">
             QUALITY
           </a>
-          <Link href="/contact-us" className="text-gray-500 hover:text-[#ED2236] font-bold text-sm lg:text-base transition-colors duration-200">
+          <Link href="/contact-us" className="text-black hover:text-[#ED2236] font-bold text-sm lg:text-base transition-colors duration-200">
             CONTACT
           </Link>
         </nav>
