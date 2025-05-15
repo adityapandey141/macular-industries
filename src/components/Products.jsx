@@ -124,7 +124,7 @@ const Products = () => {
         </div>
 
         <div className="hidden md:block">
-          <div className="sticky top-20 bg-white">
+          <div className="sticky top-30 bg-white">
             <ul className="space-y-2 mt-2">
               {serviceMenuItems.map((item, index) => (
                 <li key={index} className="border-b border-gray-300 pb-2">
