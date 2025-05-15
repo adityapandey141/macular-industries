@@ -191,7 +191,7 @@ const Products = () => {
                   </div>
                 ))
             ) : (
-              <p className="text-gray-600 text-base md:text-lg">Select a product category to view details.</p>
+              <p className="text-gray-600 text-base md:text-lg">Select a product category to view details...</p>
             )}
           </div>
         </div>
