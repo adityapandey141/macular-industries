@@ -48,13 +48,13 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full max-w-7xl mx-auto p-4 sm:p-6 bg-white rounded-lg shadow-md mt-10 mb-[30px] ">
+    <div className="w-full px-2 sm:px-4 lg:px-6">
+   <div className=" max-w-7xl mx-auto px-2 sm:px-4 lg:px-6 p-4 sm:p-6 bg-white rounded-lg shadow-lg shadow-black/30 mt-10 mb-[30px]">
       <h1 className="text-2xl sm:text-4xl font-bold text-black mb-6 text-center sm:text-left">
-       
         Share your requirements here
       </h1>
 
-      <div className="grid grid-cols-1 gap-6">
+      <div className="grid grid-cols-1 gap-6 px-4 sm:px-6 lg:px-8 shadow-black/30">
         {status.submitted ? (
           <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded">
             <p className="font-bold">Message sent successfully!</p>
@@ -128,8 +128,7 @@ const ContactForm = () => {
             <button
               type="submit"
               disabled={status.submitting}
-      
-              className={`w-full sm:w-auto py-3 px-6  bg-[#ED2236] hover:bg-[#16171A] text-white   font-semibold flex items-center justify-center gap-2 rounded transition-all duration-300 hover:shadow-md cursor-pointer ${status.submitting ? 'opacity-50 cursor-not-allowed' : ''}`}
+              className={`w-full sm:w-auto py-3 px-6 bg-[#ED2236] hover:bg-[#16171A] text-white font-semibold flex items-center justify-center gap-2 rounded transition-all duration-300 hover:shadow-md cursor-pointer ${status.submitting ? 'opacity-50 cursor-not-allowed' : ''}`}
             >
               {status.submitting ? (
                 <>
@@ -146,6 +145,7 @@ const ContactForm = () => {
           </form>
         )}
       </div>
+    </div>
     </div>
   );
 };

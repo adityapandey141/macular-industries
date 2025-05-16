@@ -12,7 +12,7 @@ const AboutUs = () => {
   return (
     <div className="relative w-full bg-white">
       <main className="relative py-12 sm:py-16 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 lg:gap-12 items-center">
+        <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6 grid md:grid-cols-2 gap-10 lg:gap-12 items-center">
  
           <div className="relative z-10">
             <div className="mb-2 sm:mb-4">
@@ -74,7 +74,7 @@ const AboutUs = () => {
               />
             </div>
 
-            <div className="relative h-[320px] sm:h-[420px] w-full rounded-lg overflow-hidden shadow-lg">
+            <div className="relative h-[320px] sm:h-[420px] w-full rounded-lg overflow-hidden shadow-lg " >
               <Image
                 src={About2}
                 alt="Professional Electrician"

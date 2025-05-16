@@ -13,7 +13,7 @@ const About = () => {
       <div className="flex flex-col md:flex-row max-w-7xl mx-auto gap-10">
         
      
-        <div className="relative w-full md:w-1/2 px-2 sm:px-4 lg:px-6">
+        <div className="relative w-full md:w-1/2 px-4 sm:px-6 lg:px-8">
           <Image 
             src={Athumb1}
             alt="Electrician working" 
@@ -23,7 +23,7 @@ const About = () => {
           />
 
       
-          <div className="absolute bottom-0 right-0 left-0 w-33 sm:w-40 md:w-70 px-2 sm:px-4 lg:px-6">
+          <div className="absolute bottom-0 right-0 left-0 w-33 sm:w-40 md:w-70 px-4 sm:px-6 lg:px-8">
             <Image 
               src={Athumb2}
               alt="Secondary" 
