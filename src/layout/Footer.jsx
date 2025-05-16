@@ -7,7 +7,7 @@ import { IoLocationSharp } from 'react-icons/io5';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#16171A] text-white w-full py-10 md:py-16 lg:py-22">
+    <footer className="bg-[#16171A] text-white w-full py-20 md:py-16 lg:py-22">
       <div className=" max-w-7xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
          

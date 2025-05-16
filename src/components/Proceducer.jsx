@@ -34,12 +34,12 @@ const BlogPosts = [
 
 const Proceducer = () => {
   return (
-    <section className="max-w-7xl mx-auto bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 mb-[-30px]">
+    <section className="max-w-7xl mx-auto bg-white py-12 sm:py-16 lg:py-20 px-2 sm:px-4 lg:px-6 mb-[-30px]">
       <div className="text-center mb-12">
           <h2 className="text-2xl sm:text-4xl font-bold text-black mt-4 sm:mt-2 mb-4">How We Ensure Quality</h2>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 ">
         {BlogPosts.map((post) => (
           <div
             key={post.id}

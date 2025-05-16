@@ -79,7 +79,7 @@ const ProductCategories = () => {
   return (
     <div className="w-full bg-white pt-6 sm:pt-10 md:pt-0">
       <section className="px-4 sm:px-6 lg:px-8 py-10 sm:py-14 md:py-16">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
            <div className="mb-2 sm:mb-4">
               <span className="text-sm text-gray-600 ">
                Product Range

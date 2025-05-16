@@ -6,7 +6,7 @@ import ctaphoto from "../assets/ctaphoto.jpg";
 const CTA3 = () => {
   return (
     <section className="bg-[#ED2236] py-20  mb-[-50px]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+      <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
         <div className="flex flex-col md:flex-row items-center ">
          
           <div className="w-full md:w-1/2 flex justify-center">

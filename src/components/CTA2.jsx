@@ -32,7 +32,7 @@ const CTA2 = () => {
           </div>
 
           <div className="flex flex-col md:flex-row md:items-center justify-between relative z-10">
-            <div className="md:w-1/2 mb-6 md:mb-0">
+            <div className="md:w-1/2 mb-6 md:mb-0 ">
             
                 
             <h1 className="text-2xl sm:text-4xl font-bold text-white mt-4 sm:mt-2 mb-4">

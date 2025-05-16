@@ -30,9 +30,9 @@ const HeroSection = () => {
           />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto flex flex-col items-center justify-center md:flex-row md:items-center md:justify-between h-full px-6 sm:px-8 lg:px-12 py-8 sm:py-12">
+        <div className="relative z-10 max-w-7xl mx-auto flex flex-col items-center justify-center md:flex-row md:items-center md:justify-between h-full px-2 sm:px-4 lg:px-6 py-8 sm:py-12">
           <div className="text-black max-w-xl text-center md:text-left space-y-5 sm:space-y-6">
-            <h1 className="text-3xl sm:text-5xl font-bold leading-tight">
+            <h1 className="text-3xl sm:text-5xl font-bold leading-tight ">
               Quality is Our Identity
             </h1>
             <p className="text-gray-800 text-base sm:text-lg leading-relaxed">
