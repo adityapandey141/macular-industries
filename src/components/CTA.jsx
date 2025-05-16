@@ -22,7 +22,7 @@ const CTA = () => {
   };
 
   return (
-    <div className="w-full bg-white text-white mb-[-50px] mt-[-50px] ">
+    <div className="w-full bg-white text-white mb-[-100px] mt-[-50px] ">
       <div className="max-w-7xl mx-auto px-4 py-8">
         <div className="relative bg-red-600 rounded-md overflow-hidden p-8">
           <div className="absolute top-0 right-0 left-0 bottom-0 opacity-10">

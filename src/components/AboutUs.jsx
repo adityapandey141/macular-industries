@@ -12,19 +12,19 @@ const AboutUs = () => {
   return (
     <div className="relative w-full bg-white">
       <main className="relative py-12 sm:py-16 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 lg:gap-12 items-center">
+        <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6 grid md:grid-cols-2 gap-10 lg:gap-12 items-center">
  
           <div className="relative z-10">
             <div className="mb-2 sm:mb-4">
               <span className="text-sm text-gray-600 ">
-                About Us
+               About Us
               </span>
+            
             </div>
-
             <h1 className="text-2xl sm:text-4xl font-bold text-black mt-4 sm:mt-2 mb-4">
-              Smart, Stylish & Sturdy Solutions
+             Smart, Stylish & Sturdy Solutions
             </h1>
-
+            
             <p className="text-gray-600 text-base  mb-6 max-w-xl">
               At Macular Industries Private Limited, we believe good design doesn’t stop at appearance, but it starts with purpose. From modular plates to innovative fan hooks, every product we create is made to last, built to blend in, and designed to stand out. As a proud Indian manufacturer, we supply directly to dealers, distributors, and suppliers who value consistency, safety, and a partner they can count on.
             </p>

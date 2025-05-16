@@ -174,12 +174,12 @@ const Header = () => {
       </div>
 
   
-      {isMenuOpen && (
+      {/* {isMenuOpen && (
         <div 
           className="fixed inset-0 bg-black bg-opacity-50 z-10 md:hidden"
           onClick={() => setIsMenuOpen(false)}
         />
-      )}
+      )} */}
     </header>
   );
 };
