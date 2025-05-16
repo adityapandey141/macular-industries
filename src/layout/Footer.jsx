@@ -7,11 +7,11 @@ import { IoLocationSharp } from 'react-icons/io5';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#16171A] text-white w-full py-20 md:py-16 lg:py-22">
-      <div className=" max-w-7xl mx-auto">
+    <footer className="bg-[#16171A] text-white w-full pt-20 pb-6 relative z-10">
+      <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
          
-          <div className="flex flex-col p-4 md:p-8 ">
+          <div className="flex flex-col p-4 md:p-8">
             <div className="relative w-40 sm:w-44 md:w-48 h-16">
               <Image
                 src={FooterLogo1}
@@ -27,7 +27,6 @@ const Footer = () => {
             </p>
           </div>
 
-        
           <div className="flex flex-col p-4 md:p-8">
             <h3 className="text-xl font-bold mb-4 md:mb-6">Useful Links</h3>
             <ul className="space-y-2 md:space-y-3">
@@ -63,7 +62,6 @@ const Footer = () => {
             </div>
           </div>
 
-       
           <div className="flex flex-col p-4 md:p-8">
             <h4 className="text-xl font-bold mb-4 md:mb-6">Social</h4>
             <div className="flex space-x-5">
@@ -80,7 +78,6 @@ const Footer = () => {
           </div>
         </div>
 
- 
         <div className="border-t border-gray-600 mt-4 md:mt-6 pt-4 md:pt-8 text-center text-sm md:text-base px-4">
           © {new Date().getFullYear()} Macular Industries Private Limited. All rights reserved.
         </div>

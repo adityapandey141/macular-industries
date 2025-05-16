@@ -43,7 +43,7 @@ const WhyChooseUs = () => {
     <section className="relative px-4 sm:px-6 lg:px-8 py-10 sm:py-16 lg:py-24 bg-black text-white overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-10 lg:gap-20 relative z-10">
        
-        <div className="w-full lg:w-1/2 px-2 sm:px-4 lg:px-6">
+        <div className="w-full lg:w-1/2 px-4 sm:px-6 lg:px-8">
           <span className="text-sm text-white">
             Why Choose Us?
           </span>

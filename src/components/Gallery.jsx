@@ -69,20 +69,21 @@ const Gallery = () => {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
           {filteredProjects.map((project) => (
-            <div
-              key={project.id}
-              className="group overflow-hidden rounded-md shadow-md hover:shadow-xl transition-shadow duration-300"
-            >
-              <div className="relative w-full aspect-square sm:aspect-[3/4]">
-                <Image
-                  src={project.imageUrl}
-                  alt={project.title}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-100 rounded-md"
-                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw"
-                />
-              </div>
-            </div>
+          <div
+          key={project.id}
+          className="group overflow-hidden rounded-md shadow-md hover:shadow-xl transition-shadow duration-300"
+        >
+          <div className="relative w-full aspect-square sm:aspect-[3/4]">
+            <Image
+              src={project.imageUrl}
+              alt={`Project ${project.id}`}
+              fill
+              className="object-cover transition-transform duration-300 transform group-hover:scale-105"
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw"
+            />
+          </div>
+        </div>
+
           ))}
         </div>
       </div>

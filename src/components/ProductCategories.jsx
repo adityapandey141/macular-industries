@@ -101,14 +101,15 @@ const ProductCategories = () => {
                 key={service.id}
                 className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow"
               >
-                <div className="relative h-48 sm:h-56 md:h-64 w-full">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+               <div className="relative h-48 sm:h-56 md:h-64 w-full overflow-hidden group">
+               <Image
+                src={service.image}
+                alt={service.title}
+                fill
+                className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+              />
+            </div>
+
               
                 <div className="p-5 sm:p-6 flex flex-col items-center text-center">
                   <div className="bg-red-500 rounded-full w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center mb-4">

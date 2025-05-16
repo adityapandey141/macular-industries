@@ -8,7 +8,7 @@ const ContactHeader = () => {
       style={{ backgroundImage: `url(${HBanner})` }}
     >
       <div className="bg-gradient-to-r from-green-50 via-yellow-50 to-purple-50 bg-opacity-10 w-full h-full">
-        <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6 h-full flex items-center justify-start">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-start">
           <div className="text-left">
             <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-black ">
               CONTACT

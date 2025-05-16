@@ -39,7 +39,7 @@ const Proceducer = () => {
           <h2 className="text-2xl sm:text-4xl font-bold text-black mt-4 sm:mt-2 mb-4">How We Ensure Quality</h2>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 sm:px-6 lg:px-8">
         {BlogPosts.map((post) => (
           <div
             key={post.id}
@@ -59,8 +59,8 @@ const Proceducer = () => {
               <h3 className="text-xl font-semibold mb-2 text-black">
                 {post.title}
               </h3>
-              <p className="text-gray-600 text-base mb-6 transition duration-300 group-hover:scale-[1.02] cursor-pointer">
-                {post.excerpt}
+              <p className="text-gray-600 text-base mb-6 cursor-pointer">
+             {post.excerpt}
               </p>
             </div>
           </div>
