@@ -11,7 +11,7 @@ const Footer = () => {
          
           <div className="flex flex-col p-4 md:p-8">
             {/* Logo replaced with company name */}
-            <span className="text-2xl font-bold text-[#ED2236]">Macular Industries</span>
+            <span className="text-2xl font-bold text-[#ffffff]">Macular Industries</span>
             <p className="text-sm leading-relaxed max-w-xs mt-4">
               Desires to obtain pain of it because it is pain but occasionally circum. We work with a passion of challenges.
             </p>

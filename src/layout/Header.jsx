@@ -60,7 +60,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         {/* Logo replaced with text */}
         <Link href="/" className="flex items-center">
-          <span className="text-2xl font-bold text-[#ED2236]">Macular Industries</span>
+          <span className="text-3xl font-bold text-[#000000]">Macular Industries</span>
         </Link>
 
         <nav className="hidden md:flex items-center space-x-6 lg:space-x-12">

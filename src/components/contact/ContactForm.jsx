@@ -54,7 +54,7 @@ const ContactForm = () => {
         Share your requirements here
       </h1>
 
-      <div className="grid grid-cols-1 gap-6 px-4 sm:px-6 lg:px-8 shadow-black/30">
+      <div className="grid grid-cols-1 gap-6 px-2 sm:px-4 lg:px-6 shadow-black/30">
         {status.submitted ? (
           <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded">
             <p className="font-bold">Message sent successfully!</p>
