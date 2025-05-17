@@ -1,8 +1,6 @@
 "use client";
 import Link from 'next/link';
-import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import LOGO1 from "../assets/LOGO1.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -51,7 +49,6 @@ const Header = () => {
     };
   }, [isMenuOpen]);
 
-  // Close menu when clicking on a link with a hash
   const handleHashLinkClick = () => {
     setIsMenuOpen(false);
   };
@@ -61,17 +58,11 @@ const Header = () => {
       isScrolled ? 'bg-white shadow-md py-6' : 'bg-white shadow-sm py-3 md:py-6'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
+        {/* Logo replaced with text */}
         <Link href="/" className="flex items-center">
-         <Image
-            src={LOGO1}
-            alt="Logo"
-            width={120}
-            height={120}
-            className="object-contain"
-          />
+          <span className="text-2xl font-bold text-[#ED2236]">Macular Industries</span>
         </Link>
 
-        
         <nav className="hidden md:flex items-center space-x-6 lg:space-x-12">
           <Link href="/" className="text-[#ED2236] font-bold text-sm lg:text-base transition-colors duration-200">
             HOME
@@ -96,7 +87,6 @@ const Header = () => {
           </a>
         </div>
 
-
         <button
           id="mobile-menu-button"
           className="md:hidden text-gray-800 hover:text-gray-600 p-2 transition-colors duration-200"
@@ -117,7 +107,7 @@ const Header = () => {
         </button>
       </div>
 
-     
+      {/* Mobile Menu */}
       <div
         id="mobile-menu"
         className={`md:hidden fixed inset-0 bg-white z-20 transform ${
@@ -164,22 +154,14 @@ const Header = () => {
           <div className="pt-4">
             <Link 
               href="/contact-us" 
-              className="block w-full bg-[#ED2236] hover:bg-[#16171A] text-white font-medium py-4 px-4 rounded-lg text-center  transition-colors duration-200"
+              className="block w-full bg-[#ED2236] hover:bg-[#16171A] text-white font-medium py-4 px-4 rounded-lg text-center transition-colors duration-200"
               onClick={handleHashLinkClick}
             >
-             MAKE APPOINMENT
+              MAKE APPOINMENT
             </Link>
           </div>
         </div>
       </div>
-
-  
-      {/* {isMenuOpen && (
-        <div 
-          className="fixed inset-0 bg-black bg-opacity-50 z-10 md:hidden"
-          onClick={() => setIsMenuOpen(false)}
-        />
-      )} */}
     </header>
   );
 };

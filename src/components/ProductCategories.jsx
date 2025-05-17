@@ -1,10 +1,6 @@
 "use client";
 import Image from 'next/image';
 import { useState } from 'react';
-// import Pshape1 from "../assets/Pshape1.png";
-// import Pshape2 from "../assets/Pshape2.png";
-// import Pshape3 from "../assets/Pshape3.png";
-// import Pshape4 from "../assets/Pshape4.png";
 import Product1 from "../assets/Product1.jpg";
 import Product2 from "../assets/Product2.jpg";
 import Product3 from "../assets/Product3.jpg";

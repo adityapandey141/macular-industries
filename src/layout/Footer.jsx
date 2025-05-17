@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import FooterLogo1 from "../assets/FooterLogo1.png";
 import { FaPhoneAlt, FaFacebook, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { IoLocationSharp } from 'react-icons/io5';
@@ -12,16 +10,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
          
           <div className="flex flex-col p-4 md:p-8">
-            <div className="relative w-40 sm:w-44 md:w-48 h-16">
-              <Image
-                src={FooterLogo1}
-                alt="Macular Logo"
-                fill
-                sizes="(max-width: 640px) 160px, (max-width: 768px) 176px, 192px"
-                className="object-contain"
-                priority
-              />
-            </div>
+            {/* Logo replaced with company name */}
+            <span className="text-2xl font-bold text-[#ED2236]">Macular Industries</span>
             <p className="text-sm leading-relaxed max-w-xs mt-4">
               Desires to obtain pain of it because it is pain but occasionally circum. We work with a passion of challenges.
             </p>
