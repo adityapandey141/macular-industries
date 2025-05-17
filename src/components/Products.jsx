@@ -3,12 +3,17 @@ import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import Psve1 from "../assets/Psve1.jpg";
 
+// Swiper imports
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
+
 const Products = () => {
   const [activeSection, setActiveSection] = useState("Box");
   const sectionRef = useRef(null);
 
   const catalogueData = [
-   {
+    {
       heading: "Box",
       text: "Reliable boxes engineered to support every type of installation, from surface to concealed wiring. Designed for sturdy mounting, easy setup, and long-lasting performance under varied conditions.",
       items: [
@@ -124,14 +129,12 @@ const Products = () => {
         </div>
 
         <div className="hidden md:block">
-          <div className="sticky top-30 bg-white">
+          <div className="sticky top-30 bg-white z-20">
             <ul className="space-y-2 mt-2">
               {serviceMenuItems.map((item, index) => (
                 <li key={index} className="border-b border-gray-300 pb-2">
                   <button
-                    className={`flex justify-between items-center text-left w-full text-base md:text-lg lg:text-xl font-semibold text-black hover:text-[#ED2236] mb-2
-                     
-                    } hover:text-[#ED2236] mb-2 cursor-pointer transition-colors duration-200`}
+                    className="flex justify-between items-center text-left w-full text-base md:text-lg lg:text-xl font-semibold text-black hover:text-[#ED2236] mb-2 cursor-pointer transition-colors duration-200"
                     onClick={() => setActiveSection(item.title)}
                   >
                     {item.title}
@@ -145,7 +148,7 @@ const Products = () => {
           </div>
         </div>
 
-       
+      
         <div className="col-span-1 md:col-span-2 px-2 md:px-5">
           <div className="mb-6 md:mb-10" ref={sectionRef}>
             {activeSection ? (
@@ -159,23 +162,38 @@ const Products = () => {
                     <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-3 md:mb-4">
                       {section.text}
                     </p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-4">
-                      <Image
-                        src={Psve1}
-                        alt="Electrician working on panel"
-                        className="w-full h-auto object-cover rounded-md"
-                      />
-                      <Image
-                        src={Psve1}
-                        alt="Electrician working on panel"
-                        className="w-full h-auto object-cover rounded-md hidden sm:block"
-                      />
-                      <Image
-                        src={Psve1}
-                        alt="Electrician working on panel"
-                        className="w-full h-auto object-cover rounded-md hidden md:block"
-                      />
+
+                   
+                      <div className="block md:hidden mt-4">
+                        <Swiper
+                          spaceBetween={10}
+                          slidesPerView={1}
+                          autoplay={{
+                            delay: 3000,
+                            disableOnInteraction: false,
+                          }}
+                          loop={true}
+                          modules={[Autoplay]}
+                        >
+                          {[1, 2, 3].map((_, i) => (
+                            <SwiperSlide key={i}>
+                              <Image
+                                src={Psve1}
+                                alt={`Product Image ${i + 1}`}
+                                className="w-full h-auto object-cover rounded-md"
+                              />
+                            </SwiperSlide>
+                          ))}
+                        </Swiper>
+                      </div>
+
+
+                    <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-4">
+                      <Image src={Psve1} alt="Product" className="w-full h-auto object-cover rounded-md" />
+                      <Image src={Psve1} alt="Product" className="w-full h-auto object-cover rounded-md" />
+                      <Image src={Psve1} alt="Product" className="w-full h-auto object-cover rounded-md" />
                     </div>
+
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
                       {section.items.map((item, i) => (
                         <div key={i} className="flex items-center p-2 sm:p-3 bg-gray-900 rounded-lg shadow-md">
