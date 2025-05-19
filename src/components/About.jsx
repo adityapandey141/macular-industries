@@ -53,55 +53,30 @@ const About = () => {
               ))}
             </div>
           </div>
+           <span className="text-lg text-gray-600 ">
+               About Macular
+              </span>
 
-          <div className="text-gray-500 text-sm mb-3">About Macular</div>
-
+         
            <h1 className="text-2xl sm:text-4xl font-bold text-black mt-4 sm:mt-2 mb-4">
             Focused on Business Impact
           </h1>
 
-          <p className="text-gray-600 text-sm sm:text-base mb-6">
+          
+            
+            <p className="text-gray-800 text-base sm:text-lg  mx-auto  mb-6 ">
             Our story is not only defined by just manufacturing but it's also about enabling our B2B partners to grow with confidence. We’re a purpose-driven company that focuses on building long-term relationships with dealers, distributors, and suppliers who value reliability, transparency and innovation.
           </p>
 
-          <p className="text-gray-600 text-sm sm:text-base mb-6">
+         
+            <p className="text-gray-800 text-base sm:text-lg  mx-auto  mb-6 ">
             Our facilities are equipped to handle scale, our processes are tuned for precision, and our team is driven by the belief that consistent quality creates consistent trust. From initial inquiry to post-delivery support, we aim to be your go-to industrial partner for dependable electrical solutions.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-8 space-y-4 sm:space-y-0 mb-8">
-            <div className="flex items-center">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-red-500 flex items-center justify-center mr-3">
-                <BiShield className="text-white text-xl sm:text-3xl" />
-                {/* <svg className="text-red-500 w-5 h-5 sm:w-6 sm:h-6" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeWidth="2">
-                  <circle cx="12" cy="12" r="10"/>
-                  <path d="M12 8v4l2 2"/>
-                  <path d="M8.93 16.93a5.5 5.5 0 1 0 6.14-9"/>
-                </svg> */}
-              </div>
-              <h4 className="font-semibold text-gray-800 text-lg">
-                Expert lectrician
-              </h4>
-            </div>
-
-            {/* <div className="w-2 h-2 bg-red-500 rotate-45 hidden sm:block"></div> */}
-
-            <div className="flex items-center">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-red-500 flex items-center justify-center mr-3">
-                <FaTools className="text-white text-xl sm:text-3xl" />
-                {/* <svg className="text-red-500 w-5 h-5 sm:w-6 sm:h-6" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeWidth="2">
-                  <circle cx="12" cy="12" r="10"/>
-                  <path d="M12 16v-4"/>
-                  <path d="M12 8h.01"/>
-                </svg> */}
-              </div>
-              <h4 className="font-semibold text-gray-800 text-lg">
-                Safety assurance
-              </h4>
-            </div>
-          </div>
+         
 
      
-          <div className="space-y-4 mb-8">
+          <div className="space-y-2 mb-4">
             {[
               '100% in-house production',
               'Custom solutions',
@@ -118,14 +93,14 @@ const About = () => {
           </div>
 
          
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-start gap-4">
+          {/* <div className="flex flex-col sm:flex-row items-start sm:items-center justify-start gap-4">
             <Link href="/contact-us">
               <button className="bg-[#ED2236] hover:bg-[#16171A] text-white font-medium py-2 sm:py-3 px-4  rounded transition-all duration-300 hover:shadow-md cursor-pointer">
              Know more
             </button>
             </Link>
            
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

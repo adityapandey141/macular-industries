@@ -40,7 +40,7 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="relative px-4 sm:px-6 lg:px-8 py-10 sm:py-16 lg:py-24 bg-black text-white overflow-hidden">
+    <section className="relative px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-10 bg-black text-white overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-10 lg:gap-20 relative z-10">
        
         <div className="w-full lg:w-1/2 px-4 sm:px-6 lg:px-8">
@@ -51,8 +51,8 @@ const WhyChooseUs = () => {
           <h1 className="text-2xl sm:text-4xl font-bold text-white mt-4 sm:mt-2 mb-4">
             Manufactured with Care
           </h1>
-
-          <p className="text-white text-base mb-6 max-w-xl">
+            
+            <p className="text-white text-base sm:text-lg  mx-auto  mb-6 max-w-xl">
             From raw materials to the final finish, every step is controlled, checked, and refined—
             because when it comes to safety and quality, we don't take shortcuts.
           </p>

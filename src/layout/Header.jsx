@@ -80,12 +80,12 @@ const Header = () => {
             CONTACT
           </Link>
         </nav>
-
+{/* 
         <div className="hidden md:block">
           <a href="/" className="bg-[#ED2236] hover:bg-[#16171A] text-white font-medium py-4 px-4 rounded transition-all duration-300 hover:shadow-md">
             MAKE APPOINMENT
           </a>
-        </div>
+        </div> */}
 
         <button
           id="mobile-menu-button"
@@ -112,7 +112,7 @@ const Header = () => {
         id="mobile-menu"
         className={`md:hidden fixed inset-0 bg-white z-20 transform ${
           isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        } transition-transform duration-300 ease-in-out pt-20`}
+        } transition-transform duration-300 ease-in-out pt-25`}
         style={{ top: isScrolled ? '56px' : '72px' }}
       >
         <div className="px-4 py-3 space-y-3">
@@ -151,7 +151,7 @@ const Header = () => {
           >
             CONTACT
           </Link>
-          <div className="pt-4">
+          {/* <div className="pt-4">
             <Link 
               href="/contact-us" 
               className="block w-full bg-[#ED2236] hover:bg-[#16171A] text-white font-medium py-4 px-4 rounded-lg text-center transition-colors duration-200"
@@ -159,7 +159,7 @@ const Header = () => {
             >
               MAKE APPOINMENT
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </header>

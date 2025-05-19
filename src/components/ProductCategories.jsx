@@ -74,24 +74,24 @@ const ProductCategories = () => {
 
   return (
     <div className="w-full bg-white pt-6 sm:pt-10 md:pt-0">
-      <section className="px-4 sm:px-6 lg:px-8 py-10 sm:py-14 md:py-16">
+      <section className="px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-10">
         <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
            <div className="mb-2 sm:mb-4">
-              <span className="text-sm text-gray-600 ">
+              <span className="text-lg text-gray-600 ">
                Product Range
               </span>
             </div>
 
-            <h1 className="text-2xl sm:text-4xl font-bold text-black mt-4 sm:mt-2 mb-4">
+            <h1 className="text-2xl sm:text-4xl font-bold text-black mt-4 sm:mt-2 ">
               That Fits Every Project, Big or Small
             </h1>
          
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8 pb-12 sm:pb-16 lg:pb-20">
-        <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+      <section className="px-4 sm:px-6 lg:px-8 pb-8 sm:pb-10 lg:pb-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service) => (
               <div
                 key={service.id}
@@ -112,7 +112,7 @@ const ProductCategories = () => {
                     {service.icon}
                   </div>
                   <h3 className="text-xl font-semibold text-black mb-2">{service.title}</h3>
-                  <p className="text-gray-600 text-base ">{service.description}</p>
+                  <p className="text-gray-800 text-base sm:text-lg  mx-auto  max-w-xl ">{service.description}</p>
                 </div>
               </div>
             ))}

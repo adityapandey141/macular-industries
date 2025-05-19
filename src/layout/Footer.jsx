@@ -12,14 +12,15 @@ const Footer = () => {
           <div className="flex flex-col p-4 md:p-8">
             {/* Logo replaced with company name */}
             <span className="text-2xl font-bold text-[#ffffff]">Macular Industries</span>
-            <p className="text-sm leading-relaxed max-w-xs mt-4">
+            
+            <p className="text-white text-sm sm:text-base  mx-auto  mt-4 max-w-xl">
               Desires to obtain pain of it because it is pain but occasionally circum. We work with a passion of challenges.
             </p>
           </div>
 
           <div className="flex flex-col p-4 md:p-8">
             <h3 className="text-xl font-bold mb-4 md:mb-6">Useful Links</h3>
-            <ul className="space-y-2 md:space-y-3">
+            <ul className="space-y-1 md:space-y-2">
               <li><a href="/" className="text-[#ED2236] hover:text-[#ED2236] transition text-base">Home</a></li>
               <li><a href="/about-us" className="hover:text-[#ED2236] transition text-base">About Us</a></li>
               <li><a href="/product" className="hover:text-[#ED2236] transition text-base">Product</a></li>
@@ -30,31 +31,34 @@ const Footer = () => {
 
           <div className="flex flex-col p-4 md:p-8">
             <h3 className="text-xl font-bold mb-4 md:mb-6">Get In Touch</h3>
-            <div className="space-y-3 md:space-y-4">
+            <div className="space-y-1 md:space-y-2">
               <div className="flex items-start">
-                <FaPhoneAlt className="text-white mr-3 mt-1" size={18} />
-                <a href="tel:+917985663499" className="text-base hover:text-[#ED2236]">
-                  +91 7985663499
+                <FaPhoneAlt className="text-white mr-3 mt-1" size={24} />
+                <a href="tel:+9193764 50829" className="text-base hover:text-[#ED2236]">
+                  +91 93764 50829
                 </a>
               </div>
               <div className="flex items-start">
-                <MdEmail className="text-white mr-3 mt-1" size={18} />
+                <MdEmail className="text-white mr-3 mt-1" size={24} />
                 <a href="mailto:macularelectric@gmail.com" className="text-base hover:text-[#ED2236] break-all">
-                  macularelectric@gmail.com
+                 macularelectric@gmail.com
                 </a>
               </div>
-              <div className="flex items-start">
-                <IoLocationSharp className="text-white mr-3 mt-1" size={18} />
-                <a href="https://www.google.com/maps/place/Surat+Gujarat+India" className="text-base hover:text-[#ED2236]">
-                  Surat (Gujarat), India
-                </a>
-              </div>
+                  <div className="flex items-start">
+                    <IoLocationSharp className="text-white mr-3 mt-1" size={24} />
+                    <div className="text-base hover:text-[#ED2236]">
+                      05 To 07, Shree Dwarkesh,<br />
+                      Ind. Estate, V2, Umra, Surat,<br />
+                      Mangrol, Gujarat, India, 394130
+                    </div>
+                  </div>
+
             </div>
           </div>
 
           <div className="flex flex-col p-4 md:p-8">
             <h4 className="text-xl font-bold mb-4 md:mb-6">Social</h4>
-            <div className="flex space-x-5">
+            <div className="flex space-x-3">
               <a href="#" aria-label="Facebook" className="hover:text-[#ED2236] transition-colors duration-300">
                 <FaFacebook size={24} />
               </a>

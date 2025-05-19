@@ -59,7 +59,7 @@ const Proceducer = () => {
               <h3 className="text-xl font-semibold mb-2 text-black">
                 {post.title}
               </h3>
-              <p className="text-gray-600 text-base mb-6 cursor-pointer">
+              <p className="text-gray-600 text-base mb-6 ">
              {post.excerpt}
               </p>
             </div>

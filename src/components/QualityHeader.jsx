@@ -14,7 +14,8 @@ const QualityHeader = () => {
              Commitment to Quality
             </h2>
              <div>
-          <p className="text-lg  text-gray-600 ">
+          
+            <p className="text-gray-800 text-base sm:text-lg ">
             Quality is our way of doing business. Every product undergoes strict in-house inspections and durability tests to ensure it meets the highest industry standards.
             </p>
             </div>

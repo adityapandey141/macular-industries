@@ -48,13 +48,13 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full px-2 sm:px-4 lg:px-6">
-   <div className=" max-w-7xl mx-auto px-2 sm:px-4 lg:px-6 p-4 sm:p-6 bg-white rounded-lg shadow-lg shadow-black/30 mt-10 mb-[30px]">
-      <h1 className="text-2xl sm:text-4xl font-bold text-black mb-6 text-center sm:text-left">
+    <div className="w-full px-4 sm:px-6 lg:px-8 ">
+   <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 p-4 sm:p-6 bg-white rounded-lg shadow-lg shadow-black/30 mt-10 mb-[30px]">
+      <h1 className="text-2xl sm:text-4xl font-bold text-black mb-4  text-left px-4 sm:px-6 lg:px-8">
         Share your requirements here
       </h1>
 
-      <div className="grid grid-cols-1 gap-6 px-4 sm:px-6 lg:px-8 shadow-black/30">
+      <div className="grid grid-cols-1 gap-4 px-4 sm:px-6 lg:px-8 shadow-black/30">
         {status.submitted ? (
           <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded">
             <p className="font-bold">Message sent successfully!</p>
@@ -68,29 +68,29 @@ const ContactForm = () => {
               </div>
             )}
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4 ">
               <div>
-                <label htmlFor="name" className="block mb-2 text-base sm:text-xl">Name</label>
+                <label htmlFor="name" className="block mb-2 text-base ">Name</label>
                 <input
                   type="text"
                   id="name"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full p-3 border border-gray-300 rounded bg-gray-100 text-lg"
+                  className="w-full p-3 border border-gray-300 rounded bg-gray-100 text-sm"
                   placeholder="Name"
                   required
                 />
               </div>
               <div>
-                <label htmlFor="phone" className="block mb-2 text-base sm:text-xl">Phone</label>
+                <label htmlFor="phone" className="block mb-2 text-base ">Phone</label>
                 <input
                   type="tel"
                   id="phone"
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full p-3 border border-gray-300 rounded bg-gray-100 text-lg"
+                  className="w-full p-3 border border-gray-300 rounded bg-gray-100 text-sm"
                   placeholder="Phone"
                   required
                 />
@@ -98,37 +98,37 @@ const ContactForm = () => {
             </div>
 
             <div className="mb-4">
-              <label htmlFor="email" className="block mb-2 text-base sm:text-xl">Email</label>
+              <label htmlFor="email" className="block mb-2 text-base ">Email</label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full p-3 border border-gray-300 rounded bg-gray-100 text-lg"
+                className="w-full p-3 border border-gray-300 rounded bg-gray-100 text-sm"
                 placeholder="Email"
                 required
               />
             </div>
 
             <div className="mb-4">
-              <label htmlFor="message" className="block mb-2 text-base sm:text-xl">Message</label>
+              <label htmlFor="message" className="block mb-2 text-base ">Message</label>
               <textarea
                 id="message"
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
                 rows={5}
-                className="w-full p-3 border border-gray-300 rounded bg-gray-100 text-lg"
+                className="w-full p-3 border border-gray-300 rounded bg-gray-100 text-sm"
                 placeholder="Type your message here..."
                 required
               />
             </div>
-
+          
             <button
               type="submit"
               disabled={status.submitting}
-              className={`w-full sm:w-auto py-3 px-6 bg-[#ED2236] hover:bg-[#16171A] text-white font-semibold flex items-center justify-center gap-2 rounded transition-all duration-300 hover:shadow-md cursor-pointer ${status.submitting ? 'opacity-50 cursor-not-allowed' : ''}`}
+              className={`w-full sm:w-auto bg-[#ED2236] hover:bg-[#16171A] text-white font-medium py-2 sm:py-3 px-4  rounded transition-all duration-300 hover:shadow-md cursor-pointer ${status.submitting ? 'opacity-50 cursor-not-allowed' : ''}`}
             >
               {status.submitting ? (
                 <>
@@ -139,7 +139,7 @@ const ContactForm = () => {
                   Sending...
                 </>
               ) : (
-                <>Send</>
+                <>SEND</>
               )}
             </button>
           </form>

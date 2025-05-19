@@ -160,6 +160,7 @@ const Products = () => {
                       {section.heading}
                     </h1>
                     <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-3 md:mb-4">
+                    
                       {section.text}
                     </p>
 

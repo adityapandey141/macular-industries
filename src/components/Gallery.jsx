@@ -56,12 +56,12 @@ const Gallery = () => {
       : projectData.filter((project) => project.category === activeCategory);
 
   return (
-    <section className="bg-white py-10 sm:py-14 lg:py-20 ">
+    <section className="bg-white py-8 sm:py-12 lg:py-18 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         
         <div className="text-center mb-10">
-          <span className="text-md text-gray-600">Gallery</span>
+          <span className="text-lg text-gray-600">Gallery</span>
           <h1 className="text-2xl sm:text-4xl font-bold text-black mt-2">
             See the Macular Difference
           </h1>

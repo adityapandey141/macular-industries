@@ -13,7 +13,8 @@ const ServiceCard = ({ title, description, icon, isDark = false }) => {
       
       <h3 className="text-xl font-medium mb-3">{title}</h3>
       
-      <p className="text-base mb-8 opacity-80">
+   
+        <p className="text-gray-800 text-base sm:text-lg ">
         {description}
       </p>
       

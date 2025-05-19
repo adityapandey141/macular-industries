@@ -11,12 +11,12 @@ import Aboutshape from "../assets/Aboutshape.png";
 const AboutUs = () => {
   return (
     <div className="relative w-full bg-white">
-      <main className="relative py-12 sm:py-16 lg:py-24">
+      <main className="relative py-6 sm:py-8 md:py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 lg:gap-12 items-center">
  
           <div className="relative z-10">
             <div className="mb-2 sm:mb-4">
-              <span className="text-sm text-gray-600 ">
+              <span className="text-lg text-gray-600 ">
                About Us
               </span>
             
@@ -24,22 +24,22 @@ const AboutUs = () => {
             <h1 className="text-2xl sm:text-4xl font-bold text-black mt-4 sm:mt-2 mb-4">
              Smart, Stylish & Sturdy Solutions
             </h1>
-            
-            <p className="text-gray-600 text-base  mb-6 max-w-xl">
+           
+            <p className="text-gray-800 text-base sm:text-lg  mx-auto  mb-6 max-w-xl">
               At Macular Industries Private Limited, we believe good design doesn’t stop at appearance, but it starts with purpose. From modular plates to innovative fan hooks, every product we create is made to last, built to blend in, and designed to stand out. As a proud Indian manufacturer, we supply directly to dealers, distributors, and suppliers who value consistency, safety, and a partner they can count on.
             </p>
 
-            <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4 sm:gap-6 mb-8">
+            <div className="flex flex-col  gap-4 sm:gap-6 mb-8">
               <div className="flex items-center space-x-3">
                 <div className="bg-red-500 p-3 rounded-md">
-                  <FaTools className="text-white text-xl sm:text-3xl" />
+                  <FaTools className="text-white text-xl sm:text-xl" />
                 </div>
                 <h4 className="font-semibold text-gray-800 text-lg">A Commitment to Quality</h4>
               </div>
 
               <div className="flex items-center space-x-3">
                 <div className="bg-red-500 p-3 rounded-md">
-                  <BiShield className="text-white text-xl sm:text-3xl" />
+                  <BiShield className="text-white text-xl sm:text-xl" />
                 </div>
                 <h4 className="font-semibold text-gray-800 text-lg">Proudly Made in India</h4>
               </div>
@@ -48,7 +48,7 @@ const AboutUs = () => {
             <div className="flex flex-col sm:flex-row sm:items-center gap-4">
               <Link href="/about-us">
               <button className="bg-[#ED2236] hover:bg-[#16171A] text-white font-medium py-2 sm:py-3 px-4  rounded transition-all duration-300 hover:shadow-md cursor-pointer">
-             Know more
+             KNOW MORE
             </button>
             </Link>
               {/* <div className="w-30 h-20 relative">

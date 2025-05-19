@@ -42,10 +42,10 @@ const HeroSection = () => {
             </p>
             <div className="flex justify-center md:justify-start">
               <a href="/product">
-                <button className="bg-[#ED2236] hover:bg-[#16171A] text-white font-medium py-4 px-4 rounded transition-all duration-300 hover:shadow-md cursor-pointer text-sm sm:text-base md:text-lg">
-                  Explore Our Products
+                <button className="bg-[#ED2236] hover:bg-[#16171A] text-white font-medium py-4 px-4 rounded transition-all duration-300 hover:shadow-md cursor-pointer">
+                  EXPLORE OUR PRODUCTS
                 </button>
-                 
+                
                 </a>
               </div>
             </div>

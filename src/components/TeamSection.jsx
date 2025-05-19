@@ -7,21 +7,21 @@ import Author3 from "../assets/Author3.jpg";
 const teamMembers = [
   {
     id: 1,
-    name: 'John Miller',
-    role: 'Construction Manager',
+    name: 'Asmita Alpeshbhai Parmar',
+    role: 'Director',
     image: Author1,
   },
   {
     id: 2,
-    name: 'Sarah Thompson',
-    role: 'Solar Engineer',
-    image: Author2,
+    name: ' Punam Jagdishkumar Delavadiya',
+    role: 'Director',
+    image: Author3,
   },
   {
     id: 3,
-    name: 'Michael Davis',
-    role: 'Safety Coordinator',
-    image: Author3,
+    name: 'Alpeshbhai Parmar',
+    role: 'General Manager',
+    image: Author2,
   },
 ];
 
