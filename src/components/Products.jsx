@@ -1,94 +1,97 @@
 "use client";
 import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
-import Psve1 from "../assets/Psve1.jpg";
-
-// Swiper imports
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
-import 'swiper/css';
+import boxsilver from "../assets/boxsilver.jpg";
+import holders from "../assets/holders.jpg";
+import plates from "../assets/plates.jpg";
+import cupseries from "../assets/cupseries.jpg";
+import poles from "../assets/poles.png";
+import anchorfasteners from "../assets/anchorfasteners.jpg";
+import pins from "../assets/pins.jpg";
 
 const Products = () => {
   const [activeSection, setActiveSection] = useState("Box");
   const sectionRef = useRef(null);
 
+
   const catalogueData = [
+
     {
       heading: "Box",
       text: "Reliable boxes engineered to support every type of installation, from surface to concealed wiring. Designed for sturdy mounting, easy setup, and long-lasting performance under varied conditions.",
       items: [
-        "Open Mod. Surface Box (Silver Line)",
-        "Open Mod. Surface Box",
-        "Modular Metal Concealed Box",
-        "Modular Open Surface Box",
-        "PVC Concealed Box",
-        "Open Gang Box"
+        { name: "Open Mod. Surface Box (Silver Line)", imageUrl: boxsilver },
+        { name: "Open Mod. Surface Box", imageUrl: boxsilver },
+        { name: "Modular Metal Concealed Box", imageUrl: boxsilver},
+        { name: "Modular Open Surface Box", imageUrl: boxsilver },
+        { name: "PVC Concealed Box", imageUrl: boxsilver },
+        { name: "Open Gang Box", imageUrl: boxsilver },
       ]
     },
     {
       heading: "Holder",
-      text: " A full range of holders manufactured for secure, efficient fittings across multiple applications. For precision gripping and maximum electrical safety, ensuring seamless installations.",
+      text: "A full range of holders manufactured for secure, efficient fittings across multiple applications. For precision gripping and maximum electrical safety, ensuring seamless installations.",
       items: [
-        "Regular Holder",
-        "4 x 4 Modular Holder",
-        "5 x 5 Modular Holder",
-        "Multi Items For Holder",
-        "Regular Fancy Holder"
+        { name: "Regular Holder", imageUrl: holders},
+        { name: "4 x 4 Modular Holder", imageUrl: holders },
+        { name: "5 x 5 Modular Holder", imageUrl: holders},
+        { name: "Multi Items For Holder", imageUrl: holders},
+        { name: "Regular Fancy Holder", imageUrl: holders }
       ]
     },
     {
       heading: "Plates",
       text: "Stylish and functional plates to complement any decor while ensuring maximum durability. Built for modern aesthetics with rugged dependability to withstand daily wear and tear.",
       items: [
-        "Round & Fam Plates",
-        "Modular Plate White",
-        "Modular Plate With Indicator",
-        "Modular Glass Plate"
+        { name: "Round & Fam Plates", imageUrl: plates },
+        { name: "Modular Plate White", imageUrl: plates},
+        { name: "Modular Plate With Indicator", imageUrl: plates},
+        { name: "Modular Glass Plate", imageUrl: plates }
       ]
     },
     {
       heading: "Series",
-      text: " Advanced capacitor series designed for superior fan performance and energy efficiency. Crafted for enhanced motor life, stable output, and reliable voltage endurance.",
+      text: "Advanced capacitor series designed for superior fan performance and energy efficiency. Crafted for enhanced motor life, stable output, and reliable voltage endurance.",
       items: [
-        "FanCap Series",
-        "RunCap Series",
-        "SubCap Series",
-        "StartCap Series"
-      ]
+        { name: "FanCap Series", imageUrl: cupseries },
+        { name: "RunCap Series", imageUrl: cupseries},
+        { name: "SubCap Series", imageUrl: cupseries },
+        { name: "StartCap Series", imageUrl: cupseries}
+      ] 
     },
     {
       heading: "Pole",
       text: "Precision-engineered pole solutions are manufactured for varied commercial and residential needs. Made to deliver reliable performance and simplify complex installations.",
       items: [
-        "Single Pole",
-        "Double Pole",
-        "TP-Three Pole",
-        "FP-Four Pole"
+        { name: "Single Pole", imageUrl: poles },
+        { name: "Double Pole", imageUrl: poles},
+        { name: "TP-Three Pole", imageUrl: poles },
+        { name: "FP-Four Pole", imageUrl: poles }
       ]
     },
     {
       heading: "Eye Hook, Fan Clamps & Anchor Fasteners (With Studs)",
-      text: " Tough and reliable accessories for safe ceiling and wall installations. Engineered for secure anchoring, load-bearing strength, and long-term stability.",
+      text: "Tough and reliable accessories for safe ceiling and wall installations. Engineered for secure anchoring, load-bearing strength, and long-term stability.",
       items: [
-        "Anchor Fastener",
-        "Fan Clamp",
-        "Chokdi Hook",
-        "Eye Hook"
+        { name: "Anchor Fastener", imageUrl: anchorfasteners },
+        { name: "Fan Clamp", imageUrl: anchorfasteners},
+        { name: "Chokdi Hook", imageUrl: anchorfasteners},
+        { name: "Eye Hook", imageUrl: anchorfasteners }
       ]
     },
     {
       heading: "Other",
       text: "A versatile selection of products to meet every installation and maintenance requirement. Covering essential accessories that ensure smooth and professional execution for all types of projects.",
       items: [
-        "Male & Female Pin",
-        "White Line D.B. Board",
-        "Modular Foot Lights",
-        "Casing & Capping Accessories (Ivory & White)",
-        "POP Fan Hook",
-        "White Flexible Pipe",
-        "Isolators",
-        "Change Over",
-        "Fan Rods"
+        { name: "Male & Female Pin", imageUrl: pins },
+        { name: "White Line D.B. Board", imageUrl: pins },
+        { name: "Modular Foot Lights", imageUrl: pins },
+        { name: "Casing & Capping Accessories (Ivory & White)", imageUrl: pins },
+        { name: "POP Fan Hook", imageUrl:pins },
+        { name: "White Flexible Pipe", imageUrl: pins},
+        { name: "Isolators", imageUrl: pins },
+        { name: "Change Over", imageUrl: pins},
+        { name: "Fan Rods", imageUrl: pins }
       ]
     }
   ];
@@ -113,7 +116,6 @@ const Products = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
-     
         <div className="md:hidden sticky top-0 z-10 bg-white py-2">
           <select
             className="w-full p-2 border border-gray-300 rounded-md cursor-pointer"
@@ -134,7 +136,7 @@ const Products = () => {
               {serviceMenuItems.map((item, index) => (
                 <li key={index} className="border-b border-gray-300 pb-2">
                   <button
-                    className="flex justify-between items-center text-left w-full text-base md:text-lg lg:text-xl font-semibold text-black hover:text-[#ED2236] mb-2 cursor-pointer transition-colors duration-200"
+                    className={`flex justify-between items-center text-left w-full text-base md:text-lg lg:text-xl font-semibold mb-2 cursor-pointer transition-colors duration-200 ${activeSection === item.title ? "text-[#ED2236]" : "text-black hover:text-[#ED2236]"}`}
                     onClick={() => setActiveSection(item.title)}
                   >
                     {item.title}
@@ -148,7 +150,6 @@ const Products = () => {
           </div>
         </div>
 
-      
         <div className="col-span-1 md:col-span-2 px-2 md:px-5">
           <div className="mb-6 md:mb-10" ref={sectionRef}>
             {activeSection ? (
@@ -160,51 +161,32 @@ const Products = () => {
                       {section.heading}
                     </h1>
                     <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-3 md:mb-4">
-                    
                       {section.text}
                     </p>
 
-                   
-                      <div className="block md:hidden mt-4">
-                        <Swiper
-                          spaceBetween={10}
-                          slidesPerView={1}
-                          autoplay={{
-                            delay: 3000,
-                            disableOnInteraction: false,
-                          }}
-                          loop={true}
-                          modules={[Autoplay]}
-                        >
-                          {[1, 2, 3].map((_, i) => (
-                            <SwiperSlide key={i}>
-                              <Image
-                                src={Psve1}
-                                alt={`Product Image ${i + 1}`}
-                                className="w-full h-auto object-cover rounded-md"
-                              />
-                            </SwiperSlide>
-                          ))}
-                        </Swiper>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+                      {section.items.map((item, i) => (
+                        <div
+                      key={i}
+                      className="flex flex-col bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow duration-300"
+                    >
+                      <div className="relative w-full aspect-[4/3] bg-gray-100">
+                        <Image
+                          src={item.imageUrl}
+                          alt={item.name}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        />
                       </div>
 
-
-                    <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-4">
-                      <Image src={Psve1} alt="Product" className="w-full h-auto object-cover rounded-md" />
-                      <Image src={Psve1} alt="Product" className="w-full h-auto object-cover rounded-md" />
-                      <Image src={Psve1} alt="Product" className="w-full h-auto object-cover rounded-md" />
+                      <div className="p-3 bg-gray-900 flex-grow flex items-center justify-center">
+                        <h3 className="text-sm sm:text-base font-medium text-white text-center">
+                          {item.name}
+                        </h3>
+                      </div>
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
-                      {section.items.map((item, i) => (
-                        <div key={i} className="flex items-center p-2 sm:p-3 bg-gray-900 rounded-lg shadow-md">
-                          <div className="bg-red-500 rounded-full w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center mr-2 sm:mr-4 shrink-0">
-                            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="text-white">
-                              <path d="M8 0L9.8 5.4H15.5L10.9 8.8L12.7 14.2L8 10.8L3.3 14.2L5.1 8.8L0.5 5.4H6.2L8 0Z"></path>
-                            </svg>
-                          </div>
-                          <span className="text-xs sm:text-sm md:text-base font-medium text-white">{item}</span>
-                        </div>
                       ))}
                     </div>
                   </div>
