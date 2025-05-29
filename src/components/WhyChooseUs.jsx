@@ -1,6 +1,6 @@
 "use client";
-import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import Image from "next/image";
+import { useState, useEffect } from "react";
 import Wshape from "../assets/Wshape.png";
 import choose1 from "../assets/choose1.png";
 
@@ -12,15 +12,16 @@ const WhyChooseUs = () => {
       setIsMobile(window.innerWidth < 768);
     };
     handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const benefits = [
     {
       id: 1,
       title: "Made with Premium-Grade Materials",
-      iconPath: "M8 0L9.8 5.4H15.5L10.9 8.8L12.7 14.2L8 10.8L3.3 14.2L5.1 8.8L0.5 5.4H6.2L8 0Z",
+      iconPath:
+        "M8 0L9.8 5.4H15.5L10.9 8.8L12.7 14.2L8 10.8L3.3 14.2L5.1 8.8L0.5 5.4H6.2L8 0Z",
     },
     {
       id: 2,
@@ -35,33 +36,56 @@ const WhyChooseUs = () => {
     {
       id: 4,
       title: "Tested for Safety",
-      iconPath: "M8 0L9.8 5.4H15.5L10.9 8.8L12.7 14.2L8 10.8L3.3 14.2L5.1 8.8L0.5 5.4H6.2L8 0Z",
+      iconPath:
+        "M8 0L9.8 5.4H15.5L10.9 8.8L12.7 14.2L8 10.8L3.3 14.2L5.1 8.8L0.5 5.4H6.2L8 0Z",
     },
   ];
 
   return (
     <section className="relative px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-10 bg-black text-white overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-10 lg:gap-20 relative z-10">
-       
         <div className="w-full lg:w-1/2 px-4 sm:px-6 lg:px-8">
-          <span className="text-sm text-white">
+          <span
+            className="text-sm text-white"
+            data-aos="fade-up"
+            data-aos-delay="30"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+          >
             Why Choose Us?
           </span>
-         
-          <h1 className="text-2xl sm:text-4xl font-bold text-white mt-4 sm:mt-2 mb-4">
+
+          <h1
+            className="text-2xl sm:text-4xl font-bold text-white mt-4 sm:mt-2 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="30"
+            data-aos-duration="900"
+            data-aos-easing="ease-in-out"
+          >
             Manufactured with Care
           </h1>
-            
-            <p className="text-white text-base sm:text-lg  mx-auto  mb-6 max-w-xl">
-            From raw materials to the final finish, every step is controlled, checked, and refined—
-            because when it comes to safety and quality, we don't take shortcuts.
+
+          <p
+            className="text-white text-base sm:text-lg  mx-auto  mb-6 max-w-xl"
+            data-aos="fade-up"
+            data-aos-delay="30"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            From raw materials to the final finish, every step is controlled,
+            checked, and refined— because when it comes to safety and quality,
+            we don't take shortcuts.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-4">
             {benefits.map((benefit) => (
               <div
                 key={benefit.id}
                 className="flex items-center p-4 sm:p-5 bg-gray-900 rounded-lg shadow-md"
+                data-aos="fade-up"
+                data-aos-delay="30"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
               >
                 <div className="bg-red-500 rounded-full w-12 h-12 flex items-center justify-center mr-4 shrink-0">
                   <svg
@@ -75,7 +99,9 @@ const WhyChooseUs = () => {
                     <path d={benefit.iconPath} />
                   </svg>
                 </div>
-                <span className="text-sm sm:text-base font-medium">{benefit.title}</span>
+                <span className="text-sm sm:text-base font-medium">
+                  {benefit.title}
+                </span>
               </div>
             ))}
           </div>
