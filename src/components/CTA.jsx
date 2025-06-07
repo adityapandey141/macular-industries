@@ -24,7 +24,7 @@ const CTA = () => {
   return (
     <div className="relative z-20   w-full py-8 md:h-30  md:bg-gray-100">
       <div className="max-w-7xl mx-auto px-4  relative ">
-        <div className=" bg-red-600 rounded-md overflow-hidden p-8 relative md:absolute bottom-[-50]">
+        <div className=" bg-red-600 rounded-md overflow-hidden p-8 relative md:absolute ">
           <div className="absolute top-0 right-0 left-0 bottom-0 opacity-10">
             <div className="transform rotate-10 -translate-y-1/4 translate-x-1/4">
               <div className="h-full w-full border-t-4 border-white"></div>
