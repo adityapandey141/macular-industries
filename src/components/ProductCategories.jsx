@@ -3,9 +3,11 @@ import Image from "next/image";
 import { useState } from "react";
 import Product1 from "../assets/Home Page/Modular Holder.webp";
 import Product2 from "../assets/Home Page/Modular Plate.webp";
-import Product3 from "../assets/Home Page/POP Fan Hook.webp";
+import Product3 from "../assets/PRODUCT/Other/POP Fan Hook.jpg";
 import Product4 from "../assets/Home Page/FanCape Series.webp";
 import { IoMdFlash } from "react-icons/io";
+import holder1 from "../assets/PRODUCT/Holder/Regular Holder.jpg";
+import plates1 from "../assets/PRODUCT/Plates/Round & Fam Plates.jpg";
 
 const ProductCategories = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -30,7 +32,7 @@ const ProductCategories = () => {
           <path d="M12 2v20M2 12h20" />
         </svg>
       ),
-      image: Product1,
+      image: holder1,
     },
     {
       id: 2,
@@ -51,7 +53,7 @@ const ProductCategories = () => {
           <path d="M6 12l6 6 6-6" />
         </svg>
       ),
-      image: Product2,
+      image: plates1,
     },
     {
       id: 3,
