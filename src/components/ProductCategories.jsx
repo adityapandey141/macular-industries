@@ -137,7 +137,7 @@ const ProductCategories = () => {
                     src={service.image}
                     alt={service.title}
                     fill
-                    className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                    className="object-contain transition-transform duration-300 ease-in-out group-hover:scale-105"
                   />
                 </div>
 
