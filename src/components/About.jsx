@@ -25,7 +25,13 @@ const About = () => {
             />
           </div> */}
 
-          <div className="absolute bottom-4 right-4 bg-white p-3 sm:p-4 flex flex-col items-start w-28 sm:w-32 md:w-40 shadow rounded">
+          <div
+            className="absolute bottom-4 right-4 bg-white p-3 sm:p-4 flex flex-col items-start w-28 sm:w-32 md:w-40 shadow rounded"
+            data-aos="fade-up"
+            data-aos-delay="30"
+            data-aos-duration="900"
+            data-aos-easing="ease-in-out"
+          >
             <div className="flex items-center">
               <div className="h-6 w-1.5 sm:h-8 sm:w-2 bg-red-600 mr-2"></div>
               <span className="text-2xl sm:text-3xl md:text-4xl font-bold">
@@ -47,14 +53,40 @@ const About = () => {
             </div>
           </div>
           <div className="section-subtitle flex text-base">
-            <IoMdFlash className="text-icon text-lg mr-2 mt-1" />
-            <span> About Macular</span>
+            <IoMdFlash
+              className="text-icon text-lg mr-2 mt-1"
+              data-aos="fade-up"
+              data-aos-delay="30"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+            />
+            <span
+              data-aos="fade-up"
+              data-aos-delay="30"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+            >
+              {" "}
+              About Macular
+            </span>
           </div>
-          <h1 className="text-2xl sm:text-4xl font-bold text-black mt-4 sm:mt-2 mb-4">
+          <h1
+            className="text-2xl sm:text-4xl font-bold text-black mt-4 sm:mt-2 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="30"
+            data-aos-duration="900"
+            data-aos-easing="ease-in-out"
+          >
             Focused on Business Impact
           </h1>
 
-          <p className="text-gray-800 text-base sm:text-lg  mx-auto  mb-6 ">
+          <p
+            className="text-gray-800 text-base sm:text-lg  mx-auto  mb-6 "
+            data-aos="fade-up"
+            data-aos-delay="30"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             Our story is not only defined by just manufacturing but it's also
             about enabling our B2B partners to grow with confidence. We’re a
             purpose-driven company that focuses on building long-term
@@ -62,7 +94,13 @@ const About = () => {
             reliability, transparency and innovation.
           </p>
 
-          <p className="text-gray-800 text-base sm:text-lg  mx-auto  mb-6 ">
+          <p
+            className="text-gray-800 text-base sm:text-lg  mx-auto  mb-6 "
+            data-aos="fade-up"
+            data-aos-delay="30"
+            data-aos-duration="1100"
+            data-aos-easing="ease-in-out"
+          >
             Our facilities are equipped to handle scale, our processes are tuned
             for precision, and our team is driven by the belief that consistent
             quality creates consistent trust. From initial inquiry to
@@ -76,7 +114,14 @@ const About = () => {
               "Custom solutions",
               "Nationwide distribution network",
             ].map((text, i) => (
-              <div key={i} className="flex items-start">
+              <div
+                key={i}
+                className="flex items-start"
+                data-aos="fade-up"
+                data-aos-delay="30"
+                data-aos-duration="900"
+                data-aos-easing="ease-in-out"
+              >
                 <div className="w-5 h-5 rounded-full bg-red-50 flex items-center justify-center mr-3 mt-1">
                   <div className="text-red-500 text-sm">⬤</div>
                 </div>

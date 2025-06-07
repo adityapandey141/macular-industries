@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import mission from "../assets/About Us/Mission.png";
+import vision from "../assets/About Us/Vision.png";
+import values from "../assets/About Us/Values.png";
 
 const ServiceCard = ({ title, description, icon, isDark = false }) => {
   return (
@@ -9,11 +12,39 @@ const ServiceCard = ({ title, description, icon, isDark = false }) => {
         isDark ? "bg-white text-grey-800" : "bg-white"
       } p-8 flex flex-col items-start`}
     >
-      <div className="mb-6">{icon}</div>
+      <div className="mb-6">
+        {" "}
+        <Image
+          src={icon}
+          alt="Logo "
+          className="object-contain w-[38%] md:w-[50%]"
+          priority
+          data-aos="fade-up"
+          data-aos-delay="30"
+          data-aos-duration="900"
+          data-aos-easing="ease-in-out"
+        />
+      </div>
 
-      <h3 className="text-xl font-medium mb-3">{title}</h3>
+      <h3
+        className="text-xl font-medium mb-3"
+        data-aos="fade-up"
+        data-aos-delay="30"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        {title}
+      </h3>
 
-      <p className="text-gray-800 text-base sm:text-lg ">{description}</p>
+      <p
+        className="text-gray-800 text-base sm:text-lg "
+        data-aos="fade-up"
+        data-aos-delay="30"
+        data-aos-duration="1100"
+        data-aos-easing="ease-in-out"
+      >
+        {description}
+      </p>
     </div>
   );
 };
@@ -168,19 +199,19 @@ const Vision = () => {
           <ServiceCard
             title="Mission"
             description={missionDescription}
-            icon={<LightbulbIcon />}
+            icon={mission}
           />
 
           <ServiceCard
             title="Vision"
             description={visionDescription}
-            icon={<ACIcon />}
+            icon={vision}
           />
 
           <ServiceCard
             title="Values"
             description={valuesDescription}
-            icon={<CameraIcon />}
+            icon={values}
             isDark={true}
           />
         </div>

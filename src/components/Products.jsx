@@ -143,7 +143,15 @@ const Products = () => {
     <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-6 md:py-8">
       <div className="flex flex-col md:flex-row gap-4 md:gap-10 mb-6">
         <div className="w-full md:w-1/3">
-          <h3 className="text-3xl font-bold text-black">Built for Business</h3>
+          <h3
+            className="text-3xl font-bold text-black"
+            data-aos="fade-up"
+            data-aos-delay="30"
+            data-aos-duration="900"
+            data-aos-easing="ease-in-out"
+          >
+            Built for Business
+          </h3>
         </div>
       </div>
 
@@ -203,10 +211,22 @@ const Products = () => {
                 .filter((section) => section.heading === activeSection)
                 .map((section, index) => (
                   <div className="mb-6 md:mb-8" key={index}>
-                    <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-black mb-2 md:mb-3 text-center md:text-left">
+                    <h1
+                      className="text-xl sm:text-2xl md:text-3xl font-bold text-black mb-2 md:mb-3 text-center md:text-left"
+                      data-aos="fade-up"
+                      data-aos-delay="30"
+                      data-aos-duration="900"
+                      data-aos-easing="ease-in-out"
+                    >
                       {section.heading}
                     </h1>
-                    <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-3 md:mb-4">
+                    <p
+                      className="text-gray-600 text-sm sm:text-base md:text-lg mb-3 md:mb-4"
+                      data-aos="fade-up"
+                      data-aos-delay="30"
+                      data-aos-duration="1000"
+                      data-aos-easing="ease-in-out"
+                    >
                       {section.text}
                     </p>
 

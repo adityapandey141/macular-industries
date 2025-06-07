@@ -40,7 +40,13 @@ const Proceducer = () => {
   return (
     <section className="max-w-7xl mx-auto bg-white py-12 sm:py-16 lg:py-20 px-2 sm:px-4 lg:px-6 mb-[-30px]">
       <div className="text-center mb-12">
-        <h2 className="text-2xl sm:text-4xl font-bold text-black mt-4 sm:mt-2 mb-4">
+        <h2
+          className="text-2xl sm:text-4xl font-bold text-black mt-4 sm:mt-2 mb-4"
+          data-aos="fade-up"
+          data-aos-delay="30"
+          data-aos-duration="800"
+          data-aos-easing="ease-in-out"
+        >
           How We Ensure Quality
         </h2>
       </div>
@@ -51,7 +57,7 @@ const Proceducer = () => {
             key={post.id}
             className="bg-white shadow-md rounded-md overflow-hidden transition duration-300 group hover:shadow-lg"
           >
-            <div className="relative w-full h-56 sm:h-60 lg:h-72">
+            <div className="relative w-full h-56 md:h-60">
               <Image
                 src={post.image}
                 alt={post.title}
@@ -61,11 +67,25 @@ const Proceducer = () => {
               />
             </div>
 
-            <div className="p-6 transition duration-300 ease-in-out">
-              <h3 className="text-xl font-semibold mb-2 text-black">
+            <div className="px-4 py-4 transition duration-300 ease-in-out">
+              <h3
+                className="text-xl font-semibold mb-2 text-black"
+                data-aos="fade-up"
+                data-aos-delay="30"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+              >
                 {post.title}
               </h3>
-              <p className="text-gray-600 text-base mb-6 ">{post.excerpt}</p>
+              <p
+                className="text-gray-600 text-base "
+                data-aos="fade-up"
+                data-aos-delay="30"
+                data-aos-duration="1100"
+                data-aos-easing="ease-in-out"
+              >
+                {post.excerpt}
+              </p>
             </div>
           </div>
         ))}

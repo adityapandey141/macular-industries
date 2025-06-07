@@ -22,9 +22,9 @@ const CTA = () => {
   };
 
   return (
-    <div className="relative z-20 -mb-24 mt-[-50px] w-full">
-      <div className="max-w-7xl mx-auto px-4 py-8">
-        <div className="relative bg-red-600 rounded-md overflow-hidden p-8">
+    <div className="relative z-20   w-full py-8 md:h-30  md:bg-gray-100">
+      <div className="max-w-7xl mx-auto px-4  relative ">
+        <div className=" bg-red-600 rounded-md overflow-hidden p-8 relative md:absolute bottom-[-50]">
           <div className="absolute top-0 right-0 left-0 bottom-0 opacity-10">
             <div className="transform rotate-10 -translate-y-1/4 translate-x-1/4">
               <div className="h-full w-full border-t-4 border-white"></div>
@@ -33,7 +33,7 @@ const CTA = () => {
 
           <div className="flex flex-col md:flex-row md:items-center justify-between relative z-10">
             <div className="md:w-1/2 mb-6 md:mb-0">
-              <h1 className="text-3xl sm:text-5xl font-bold text-white mt-4 sm:mt-2 mb-4">
+              <h1 className="text-3xl md:text-4xl font-bold text-white mt-4 sm:mt-2 mb-4">
                 Ready to Partner with a Trusted Manufacturer?
               </h1>
             </div>
