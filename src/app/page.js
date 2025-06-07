@@ -5,6 +5,7 @@ import ProductCategories from "@/components/ProductCategories";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Gallery from "@/components/Gallery";
 import CTA from "@/components/CTA";
+import "./page.css";
 
 const page = () => {
   return (

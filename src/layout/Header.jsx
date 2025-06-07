@@ -3,6 +3,8 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import logo from "../assets/logo.png";
+import Image from "next/image";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -61,16 +63,19 @@ const Header = () => {
     <header
       className={`sticky top-0 w-full z-30 transition-all duration-300 ${
         isScrolled
-          ? "bg-white shadow-md py-6"
-          : "bg-white shadow-sm py-3 md:py-6"
+          ? "bg-white shadow-md py-3"
+          : "bg-white shadow-sm py-3 md:py-2"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         {/* Logo replaced with text */}
         <Link href="/" className="flex items-center">
-          <span className="text-3xl font-bold text-[#000000]">
-            Macular Industries
-          </span>
+          <Image
+            src={logo}
+            alt="Logo "
+            className="object-contain w-[38%] md:w-[20%]"
+            priority
+          />
         </Link>
 
         <nav className="hidden md:flex items-center space-x-6 lg:space-x-12">
@@ -152,10 +157,10 @@ const Header = () => {
         id="mobile-menu"
         className={`md:hidden fixed inset-0 bg-white z-20 transform ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-300 ease-in-out pt-25`}
-        style={{ top: isScrolled ? "56px" : "72px" }}
+        } transition-transform duration-300 ease-in-out pt-15`}
+        style={{ top: isScrolled ? "72px" : "72px" }}
       >
-        <div className="px-4 py-3 space-y-3">
+        <div className="px-2  space-y-3">
           <Link
             href="/"
             className="block px-4 py-3 text-gray-800 hover:bg-gray-100 rounded-lg font-medium transition-colors duration-200"

@@ -1,23 +1,5 @@
 @import "tailwindcss";
 
-html {
-  scroll-behavior: smooth;
-}
-
-.homebanner2{
-  position: absolute;
-  z-index: 1;
-  right: 0;
-}
-.homebanner2 img{
-  position: relative !important;
-}
-
-
-.whyusbanner{
-  right: 0;
-  top:0;
-}
-.whyusbanner img{
-  position: relative !important;
+@theme {
+  --color-icon: #dd0733;
 }

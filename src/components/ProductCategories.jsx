@@ -1,10 +1,11 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import Product1 from "../assets/Product1.jpg";
-import Product2 from "../assets/Product2.jpg";
-import Product3 from "../assets/Product3.jpg";
-import Product4 from "../assets/Product4.jpg";
+import Product1 from "../assets/Home Page/Modular Holder.webp";
+import Product2 from "../assets/Home Page/Modular Plate.webp";
+import Product3 from "../assets/Home Page/POP Fan Hook.webp";
+import Product4 from "../assets/Home Page/FanCape Series.webp";
+import { IoMdFlash } from "react-icons/io";
 
 const ProductCategories = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -97,21 +98,22 @@ const ProductCategories = () => {
   ];
 
   return (
-    <div className="w-full bg-white pt-6 sm:pt-10 md:pt-0">
-      <section className="px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-10">
-        <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
+    <section className="px-5 md:px-35 py-12 md:py-15 ">
+      <div className="mb-4 md:mb-8">
+        <div className=" ">
           <div
-            className="mb-2 sm:mb-4"
+            className="section-subtitle flex text-base "
             data-aos="fade-up"
             data-aos-delay="30"
             data-aos-duration="800"
             data-aos-easing="ease-in-out"
           >
-            <span className="text-lg text-gray-600 ">Product Range</span>
+            <IoMdFlash className="text-icon text-lg mr-2 mt-1" />
+            <span> Products Range</span>
           </div>
 
           <h1
-            className="text-2xl sm:text-4xl font-bold text-black mt-4 sm:mt-2 "
+            className="text-3xl sm:text-5xl font-bold text-black mt-4 "
             data-aos="fade-up"
             data-aos-delay="30"
             data-aos-duration="900"
@@ -120,10 +122,10 @@ const ProductCategories = () => {
             That Fits Every Project, Big or Small
           </h1>
         </div>
-      </section>
+      </div>
 
-      <section className="px-4 sm:px-6 lg:px-8 pb-8 sm:pb-10 lg:pb-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="">
+        <div className="">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service) => (
               <div
@@ -153,7 +155,7 @@ const ProductCategories = () => {
                     {service.title}
                   </h3>
                   <p
-                    className="text-gray-800 text-base sm:text-lg  mx-auto  "
+                    className=" text-base text mx-auto  "
                     data-aos="fade-up"
                     data-aos-delay="50"
                     data-aos-duration="1000"
@@ -166,8 +168,8 @@ const ProductCategories = () => {
             ))}
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 

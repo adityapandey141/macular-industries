@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: #727272;
+}
+
+h1,
+h2,
+h3.h4 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+}
+
+.homebanner2 {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+}
+.homebanner2 img {
+  position: relative !important;
+}
+
+.whyusbanner {
+  right: 0;
+  top: 0;
+}
+.whyusbanner img {
+  position: relative !important;
+}
+
+.rotatingimg {
+  animation: tp-rotate-center 15s linear infinite;
+}
+
+.rotatingimg2 {
+  animation: tptranslateX2 4s infinite alternate;
+}
+
+@keyframes tp-rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes tptranslateX2 {
+  0% {
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(40px);
+    -moz-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    -o-transform: translateX(40px);
+    transform: translateX(40px);
+  }
+}
+
+/* about us section  */
+
+.section-subtitle {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.section-subtitle svg {
+  rotate: 15deg;
+}
